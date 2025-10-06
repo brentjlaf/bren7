@@ -172,7 +172,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Sitemap Content Exporter – Bulk Page Copy Downloader</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Download page content, metadata, and headings from sitemap URLs into shareable reports using the BREN7 Sitemap Content Exporter.">
-  <meta name="keywords" content="sitemap content exporter, bulk copy download, page text extractor, seo content audit, Morweb exporter">
+  <meta name="keywords" content="sitemap content exporter, bulk copy download, page text extractor, seo content audit, BREN7 exporter">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 

@@ -321,7 +321,7 @@ class AltTagScanner {
     <title>Website Alt Tag Scanner – Image Accessibility Audit</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Scan sitemap URLs to pinpoint images missing alt attributes and export accessibility reports with the BREN7 Alt Tag Scanner.">
-  <meta name="keywords" content="alt text scanner, accessibility audit, image SEO tool, sitemap accessibility, Morweb compliance">
+  <meta name="keywords" content="alt text scanner, accessibility audit, image SEO tool, sitemap accessibility, BREN7 compliance">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 

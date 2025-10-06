@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>MW Form Scanner – Form Inventory & Action Audit</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Scan sitemap URLs to catalog forms, capture endpoints, and verify submission methods with the BREN7 MW Form Scanner.">
-  <meta name="keywords" content="form scanner, form inventory tool, submission endpoint audit, sitemap form analysis, Morweb form checker">
+  <meta name="keywords" content="form scanner, form inventory tool, submission endpoint audit, sitemap form analysis, BREN7 form checker">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
@@ -159,7 +159,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     --dark-gray: #374151;
     --neutral-gray: #6B7280;
 
-    /* Morweb nav overrides (unused here) */
+    /* BREN7 nav overrides (unused here) */
     --nav-header-bg: #2EB7A0;
     --nav-footer-bg: #DEDEDE;
     --nav-text-default: #333333;

@@ -158,7 +158,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Sitemap to CSV Exporter – Advanced Insights</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Transform sitemap XML into CSV files enriched with metadata, canonical tags, and analytics-ready fields using BREN7's advanced exporter.">
-  <meta name="keywords" content="advanced sitemap exporter, metadata csv, seo data extraction, url export tool, Morweb sitemap">
+  <meta name="keywords" content="advanced sitemap exporter, metadata csv, seo data extraction, url export tool, BREN7 sitemap">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 

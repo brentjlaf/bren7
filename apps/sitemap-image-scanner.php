@@ -232,7 +232,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>MW Image Scanner – Sitemap Media Audit</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Crawl a sitemap to audit image usage, detect duplicates, and compile alt text insights with the BREN7 MW Image Scanner.">
-  <meta name="keywords" content="image sitemap scanner, media audit tool, alt text review, duplicate image finder, Morweb image analysis">
+  <meta name="keywords" content="image sitemap scanner, media audit tool, alt text review, duplicate image finder, BREN7 image analysis">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
@@ -281,7 +281,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     --dark-gray: #374151;
     --neutral-gray: #6B7280;
 
-    /* Morweb nav overrides */
+    /* BREN7 nav overrides */
     --nav-header-bg: #2EB7A0;
     --nav-footer-bg: #DEDEDE;
     --nav-text-default: #333333;
@@ -702,7 +702,7 @@ tbody tr:nth-child(even) {
     <div class="container">
         <div class="header">
             <h1><i class="fas fa-images"></i> MW Image Scanner</h1>
-            <p class="subtitle">Discover all images used across your Morweb site</p>
+            <p class="subtitle">Discover all images used across your BREN7 site</p>
         </div>
 
         <div class="card">

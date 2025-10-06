@@ -386,7 +386,7 @@ if (!empty($scanResults)) {
     <title>Accessibility Quick Scan – WCAG Issue Finder</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Run rapid accessibility checks across sitemap URLs and prioritize WCAG issues with the BREN7 Accessibility Quick Scan tool.">
-  <meta name="keywords" content="accessibility scanner, wcag audit, quick compliance check, web accessibility report, Morweb accessibility">
+  <meta name="keywords" content="accessibility scanner, wcag audit, quick compliance check, web accessibility report, BREN7 accessibility">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 

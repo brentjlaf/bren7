@@ -146,7 +146,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Sitemap to CSV Exporter – Quick URL Download</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Download sitemap URLs into a clean CSV for quick audits or sharing with the BREN7 basic sitemap exporter.">
-  <meta name="keywords" content="basic sitemap exporter, sitemap to csv, quick url download, seo url list, Morweb sitemap tool">
+  <meta name="keywords" content="basic sitemap exporter, sitemap to csv, quick url download, seo url list, BREN7 sitemap tool">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
