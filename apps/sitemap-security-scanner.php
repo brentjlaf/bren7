@@ -353,7 +353,7 @@ function getRiskLevel($filename) {
     <title>MW Security Scanner – Sitemap Risk Review</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Evaluate sitemap URLs for security signals, mixed content, and vulnerable assets with the BREN7 MW Security Scanner.">
-  <meta name="keywords" content="security sitemap scanner, mixed content checker, vulnerability audit, website security review, Morweb security tool">
+  <meta name="keywords" content="security sitemap scanner, mixed content checker, vulnerability audit, website security review, BREN7 security tool">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
@@ -402,7 +402,7 @@ function getRiskLevel($filename) {
     --dark-gray: #374151;
     --neutral-gray: #6B7280;
 
-    /* Morweb nav overrides */
+    /* BREN7 nav overrides */
     --nav-header-bg: #2EB7A0;
     --nav-footer-bg: #DEDEDE;
     --nav-text-default: #333333;

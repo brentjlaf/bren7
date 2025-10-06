@@ -295,7 +295,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>MW Image Scanner – Lazy Loading Audit</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Evaluate sitemap images, detect duplicates, and verify lazy loading attributes with the BREN7 MW Image Scanner (Lazy Load Edition).">
-  <meta name="keywords" content="image lazy loading audit, sitemap media scanner, lazyload checker, image performance review, Morweb image tool">
+  <meta name="keywords" content="image lazy loading audit, sitemap media scanner, lazyload checker, image performance review, BREN7 image tool">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
@@ -344,7 +344,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     --dark-gray: #374151;
     --neutral-gray: #6B7280;
 
-    /* Morweb nav overrides */
+    /* BREN7 nav overrides */
     --nav-header-bg: #2EB7A0;
     --nav-footer-bg: #DEDEDE;
     --nav-text-default: #333333;
@@ -775,7 +775,7 @@ tbody tr:nth-child(even) {
     <div class="container">
         <div class="header">
             <h1><i class="fas fa-images"></i> MW Image Scanner</h1>
-            <p class="subtitle">Discover all images used across your Morweb site (including lazy loaded images)</p>
+            <p class="subtitle">Discover all images used across your BREN7 site (including lazy loaded images)</p>
         </div>
 
         <div class="card">

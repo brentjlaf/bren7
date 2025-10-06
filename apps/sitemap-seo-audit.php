@@ -219,7 +219,7 @@ if (!empty($_GET['export']) && $_GET['export'] == '1' && !empty($all_results)) {
   <title>SEO Sitemap Audit – Technical Checks Dashboard</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Run automated SEO checks across sitemap URLs to verify metadata, headings, and performance indicators with the BREN7 SEO Sitemap Audit tool.">
-  <meta name="keywords" content="sitemap seo audit, technical seo scanner, metadata checker, web performance audit, Morweb tools">
+  <meta name="keywords" content="sitemap seo audit, technical seo scanner, metadata checker, web performance audit, BREN7 tools">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 

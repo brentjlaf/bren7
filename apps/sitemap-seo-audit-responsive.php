@@ -219,7 +219,7 @@ if (!empty($_GET['export']) && $_GET['export'] == '1' && !empty($all_results)) {
   <title>SEO Sitemap Audit – Responsive Dashboard</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Review sitemap URLs on any device with responsive tables that highlight metadata, headings, and performance issues in the BREN7 SEO Sitemap Audit tool.">
-  <meta name="keywords" content="responsive seo audit, sitemap checker, metadata compliance, mobile seo monitoring, Morweb tools">
+  <meta name="keywords" content="responsive seo audit, sitemap checker, metadata compliance, mobile seo monitoring, BREN7 tools">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 

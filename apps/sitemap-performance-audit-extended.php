@@ -249,7 +249,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $recommendations[] = "Consider using a CDN or optimizing server configuration";
         }
         
-        // Check for common Morweb optimizations
+        // Check for common BREN7 optimizations
         $hasViewport = $xpath->query('//meta[@name="viewport"]')->length > 0;
         if (!$hasViewport) {
             $issues[] = "Missing viewport meta tag";
@@ -348,7 +348,7 @@ function formatBytes($size, $precision = 2) {
     <title>MW Performance Auditor – Extended Lighthouse Review</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Aggregate Lighthouse metrics, Core Web Vitals, and page weights for every sitemap URL with the extended MW Performance Auditor.">
-  <meta name="keywords" content="performance audit tool, lighthouse report aggregator, core web vitals scanner, sitemap performance, Morweb auditor">
+  <meta name="keywords" content="performance audit tool, lighthouse report aggregator, core web vitals scanner, sitemap performance, BREN7 auditor">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
@@ -397,7 +397,7 @@ function formatBytes($size, $precision = 2) {
     --dark-gray: #374151;
     --neutral-gray: #6B7280;
 
-    /* Morweb nav overrides */
+    /* BREN7 nav overrides */
     --nav-header-bg: #2EB7A0;
     --nav-footer-bg: #DEDEDE;
     --nav-text-default: #333333;
@@ -844,7 +844,7 @@ tbody tr:nth-child(even) {
 
         <div class="card">
             <h2><i class="fas fa-info-circle"></i> About This Tool</h2>
-            <p>The Performance Auditor analyzes your site's page speed metrics, resource loading, and identifies optimization opportunities. It checks load times, file sizes, resource counts, image optimization, CSS/JavaScript usage, and provides actionable recommendations to improve your Morweb site's performance.</p>
+            <p>The Performance Auditor analyzes your site's page speed metrics, resource loading, and identifies optimization opportunities. It checks load times, file sizes, resource counts, image optimization, CSS/JavaScript usage, and provides actionable recommendations to improve your BREN7 site's performance.</p>
         </div>
 
         <div class="card instructions">

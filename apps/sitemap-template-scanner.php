@@ -102,7 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>MW Template Scanner – Layout Consistency Checker</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Identify page templates, component usage, and CMS layouts across sitemap URLs using the BREN7 MW Template Scanner.">
-  <meta name="keywords" content="template scanner, layout detection tool, cms template audit, sitemap layout analysis, Morweb template scanner">
+  <meta name="keywords" content="template scanner, layout detection tool, cms template audit, sitemap layout analysis, BREN7 template scanner">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
@@ -151,7 +151,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     --dark-gray: #374151;
     --neutral-gray: #6B7280;
 
-    /* Morweb nav overrides */
+    /* BREN7 nav overrides */
     --nav-header-bg: #2EB7A0;
     --nav-footer-bg: #DEDEDE;
     --nav-text-default: #333333;
@@ -538,7 +538,7 @@ tbody tr:nth-child(even) {
     <div class="container">
         <div class="header">
             <h1><i class="fas fa-code"></i> MW Template Scanner</h1>
-            <p class="subtitle">Analyze template usage across your Morweb site</p>
+            <p class="subtitle">Analyze template usage across your BREN7 site</p>
         </div>
 
         <div class="card">

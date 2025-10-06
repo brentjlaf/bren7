@@ -415,7 +415,7 @@ function analyzeDeviceCompatibility($html, $css, $dimensions) {
     <title>Mobile Friendliness Checker – Responsive Design Audit</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Analyze viewport settings, tap targets, and responsive layout issues for sitemap URLs with the BREN7 Mobile Friendliness Checker.">
-  <meta name="keywords" content="mobile friendliness checker, responsive design audit, mobile usability tool, tap target analysis, Morweb mobile audit">
+  <meta name="keywords" content="mobile friendliness checker, responsive design audit, mobile usability tool, tap target analysis, BREN7 mobile audit">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 

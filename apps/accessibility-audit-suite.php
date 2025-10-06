@@ -963,7 +963,7 @@ if (!empty($scanResults)) {
     <title>Comprehensive Accessibility Scanner – WCAG Audit Suite</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Conduct deep accessibility audits, track WCAG violations, and export compliance reports with the BREN7 Comprehensive Accessibility Scanner.">
-  <meta name="keywords" content="accessibility audit suite, wcag compliance tool, accessibility dashboard, violation tracker, Morweb accessibility">
+  <meta name="keywords" content="accessibility audit suite, wcag compliance tool, accessibility dashboard, violation tracker, BREN7 accessibility">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 

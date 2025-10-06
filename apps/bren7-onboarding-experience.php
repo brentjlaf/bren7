@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Morweb CMS – Enhanced Onboarding Experience</title>
+  <title>BREN7 CMS – Enhanced Onboarding Experience</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore interactive onboarding flows, task automation, and client resources inside the Morweb CMS Enhanced Onboarding Experience prototype by BREN7.">
-  <meta name="keywords" content="Morweb onboarding, client onboarding dashboard, cms training journey, implementation planner, agency workflow">
+  <meta name="description" content="Explore interactive onboarding flows, task automation, and client resources inside the BREN7 CMS Enhanced Onboarding Experience prototype by BREN7.">
+  <meta name="keywords" content="BREN7 onboarding, client onboarding dashboard, cms training journey, implementation planner, agency workflow">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Morweb CMS – Enhanced Onboarding Experience">
-  <meta property="og:description" content="Preview the guided onboarding portal concept for Morweb CMS featuring tasks, resources, and client insights.">
-  <meta property="og:url" content="https://bren7.com/apps/morweb-onboarding-experience.php">
+  <meta property="og:title" content="BREN7 CMS – Enhanced Onboarding Experience">
+  <meta property="og:description" content="Preview the guided onboarding portal concept for BREN7 CMS featuring tasks, resources, and client insights.">
+  <meta property="og:url" content="https://bren7.com/apps/bren7-onboarding-experience.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Morweb CMS – Enhanced Onboarding Experience">
-  <meta name="twitter:description" content="Tour the Morweb CMS onboarding portal concept with guided tasks and resources by BREN7.">
+  <meta name="twitter:title" content="BREN7 CMS – Enhanced Onboarding Experience">
+  <meta name="twitter:description" content="Tour the BREN7 CMS onboarding portal concept with guided tasks and resources by BREN7.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->
@@ -809,7 +809,7 @@
       <div class="brand">
         <div class="logo" aria-hidden="true"></div>
         <div>
-          <div>Morweb CMS</div>
+          <div>BREN7 CMS</div>
           <div class="muted" style="font-size:12px">Enhanced Website Onboarding</div>
         </div>
       </div>
@@ -883,7 +883,7 @@
               <div class="section-icon">🏢</div>
               <div>
                 <div>Organization Details</div>
-                <p class="hint">Basic information to personalize your Morweb experience</p>
+                <p class="hint">Basic information to personalize your BREN7 experience</p>
               </div>
             </h3>
           </div>
@@ -1165,14 +1165,14 @@
           </div>
         </section>
 
-        <!-- 4: Features (Morweb widgets) -->
+        <!-- 4: Features (BREN7 widgets) -->
         <section class="section" data-key="features" data-title="Features & Modules" data-icon="⚙️" data-difficulty="🔧">
           <div class="section-header">
             <h3>
               <div class="section-icon">⚙️</div>
               <div>
                 <div>Website Features & Functionality</div>
-                <p class="hint">Select the Morweb modules and custom features you need</p>
+                <p class="hint">Select the BREN7 modules and custom features you need</p>
               </div>
             </h3>
           </div>
@@ -1182,9 +1182,9 @@
           </div>
 
           <label style="margin-bottom: 12px;">
-            Morweb Modules (select all that apply)
+            BREN7 Modules (select all that apply)
             <div class="field-help">?
-              <div class="tooltip">These are pre-built Morweb components. Each adds specific functionality.</div>
+              <div class="tooltip">These are pre-built BREN7 components. Each adds specific functionality.</div>
             </div>
           </label>
           <div class="chips" data-field="features.modules" data-type="chips">
@@ -1410,7 +1410,7 @@
           <div class="notice success">
             <span>⚡</span>
             <div>
-              <strong>Performance Promise:</strong> All Morweb sites are optimized for speed with modern hosting, image optimization, and clean code.
+              <strong>Performance Promise:</strong> All BREN7 sites are optimized for speed with modern hosting, image optimization, and clean code.
             </div>
           </div>
         </section>
@@ -1480,7 +1480,7 @@
           <div class="notice">
             <span>📚</span>
             <div>
-              <strong>Training Included:</strong> All Morweb projects include comprehensive training tailored to your team's preferences and technical comfort level.
+              <strong>Training Included:</strong> All BREN7 projects include comprehensive training tailored to your team's preferences and technical comfort level.
             </div>
           </div>
         </section>
@@ -1548,7 +1548,7 @@
                       <div class="notice success">
             <span>🛡️</span>
             <div>
-              <strong>Enterprise Security:</strong> Morweb includes SSL certificates, automated backups, security monitoring, and WCAG compliance as standard.
+              <strong>Enterprise Security:</strong> BREN7 includes SSL certificates, automated backups, security monitoring, and WCAG compliance as standard.
             </div>
           </div>
         </section>
@@ -1808,7 +1808,7 @@
       const $autoSaveIndicator = $("#autoSaveIndicator");
       const $completionBanner = $("#completionBanner");
       
-      const STORAGE_KEY = "morweb_onboarding_enhanced_v2";
+      const STORAGE_KEY = "bren7_onboarding_enhanced_v2";
       
       // Section metadata
       const sectionData = [
@@ -1863,7 +1863,7 @@
         
         updateProgress();
         updateNavigation();
-        localStorage.setItem('morweb_onboarding_idx', idx);
+        localStorage.setItem('bren7_onboarding_idx', idx);
         
         // Celebration for section completion
         if (isSectionComplete(idx)) {
@@ -2314,7 +2314,7 @@
         const a = document.createElement('a');
         const timestamp = new Date().toISOString().slice(0,10);
         a.href = URL.createObjectURL(blob);
-        a.download = `morweb-onboarding-${data.org?.name?.replace(/[^a-zA-Z0-9]/g, '-') || 'project'}-${timestamp}.json`;
+        a.download = `bren7-onboarding-${data.org?.name?.replace(/[^a-zA-Z0-9]/g, '-') || 'project'}-${timestamp}.json`;
         a.click();
         URL.revokeObjectURL(a.href);
         
@@ -2377,7 +2377,7 @@
       $("#printSummary").on('click', () => window.print());
 
       $("#emailSummary").on('click', () => {
-        const subject = encodeURIComponent('Morweb CMS Project Summary');
+        const subject = encodeURIComponent('BREN7 CMS Project Summary');
         const body = encodeURIComponent($("#summary").text());
         window.location.href = `mailto:?subject=${subject}&body=${body}`;
       });
@@ -2419,7 +2419,7 @@
         const p = (h, v) => lines.push(`${h}: ${v || '—'}`);
         const join = a => Array.isArray(a) && a.length ? a.join(', ') : '—';
 
-        lines.push(`# ${d.org?.name || 'Organization'} - Morweb CMS Project Summary`);
+        lines.push(`# ${d.org?.name || 'Organization'} - BREN7 CMS Project Summary`);
         lines.push(`Generated: ${new Date().toLocaleDateString()}`);
         lines.push('');
         
@@ -2555,7 +2555,7 @@
         t.push('   • Accessibility compliance (WCAG 2.2 AA)');
         t.push('');
         t.push('   Phase 3: Development & Configuration');
-        t.push('   • Morweb CMS setup and configuration');
+        t.push('   • BREN7 CMS setup and configuration');
         t.push('   • Custom template development');
         
         const modules = d.features?.modules || [];
@@ -2609,7 +2609,7 @@
         t.push('   • Project discovery report');
         t.push('   • Site architecture and wireframes');
         t.push('   • Visual design mockups and style guide');
-        t.push('   • Fully configured Morweb CMS website');
+        t.push('   • Fully configured BREN7 CMS website');
         t.push('   • Content migration and optimization');
         t.push('   • Integration setup and testing');
         t.push('   • Training materials and documentation');
@@ -2631,7 +2631,7 @@
         t.push('5. 💰 INVESTMENT');
         t.push(`   • Estimated Range: ${budget} CAD`);
         t.push('   • Payment Schedule: 50% at start, 25% at design approval, 25% at launch');
-        t.push('   • Ongoing Morweb hosting and support separate');
+        t.push('   • Ongoing BREN7 hosting and support separate');
         
         t.push('');
         t.push('6. 👥 TEAM & RESPONSIBILITIES');
@@ -2642,7 +2642,7 @@
         }
         
         t.push('');
-        t.push('   Morweb Team:');
+        t.push('   BREN7 Team:');
         t.push('   • Project Manager (coordination and timeline)');
         t.push('   • UX/UI Designer (design and user experience)');
         t.push('   • Developer (technical implementation)');
@@ -2673,7 +2673,7 @@
           t.push(`     ${d.analytics.kpis}`);
         }
         
-        t.push('   • Ongoing Morweb platform updates and security');
+        t.push('   • Ongoing BREN7 platform updates and security');
         t.push('   • Additional training and support available');
         
         t.push('');
@@ -2783,7 +2783,7 @@
       }
 
       // Initialize
-      setActive(Number(localStorage.getItem('morweb_onboarding_idx')) || 0);
+      setActive(Number(localStorage.getItem('bren7_onboarding_idx')) || 0);
       updateProgress();
 
       // Add CSS animations for notifications
@@ -2864,10 +2864,10 @@
           lastSectionTime = now;
           
           // Store analytics data
-          const analytics = JSON.parse(localStorage.getItem('morweb_analytics') || '{}');
+          const analytics = JSON.parse(localStorage.getItem('bren7_analytics') || '{}');
           analytics.sectionTimes = sectionTimes;
           analytics.totalTime = now - startTime;
-          localStorage.setItem('morweb_analytics', JSON.stringify(analytics));
+          localStorage.setItem('bren7_analytics', JSON.stringify(analytics));
         }
 
         // Hook into section changes
@@ -2934,7 +2934,7 @@
           5: "🔗 Integrations save time but add complexity - prioritize your must-haves.",
           6: "📈 Good SEO takes time - focus on 5-10 realistic target keywords.",
           7: "👤 Plan for who will actually maintain the site day-to-day.",
-          8: "🔒 Morweb handles most security - focus on your specific requirements.",
+          8: "🔒 BREN7 handles most security - focus on your specific requirements.",
           9: "📅 Add 2-4 weeks buffer to your ideal launch date for best results.",
           10: "📊 Pick 3-5 key metrics that directly relate to your goals.",
           11: "📝 This is your space to mention anything unique about your situation."
@@ -2992,7 +2992,7 @@
           printWindow.document.write(`
             <html>
               <head>
-                <title>${data.org?.name || 'Organization'} - Morweb Project Summary</title>
+                <title>${data.org?.name || 'Organization'} - BREN7 Project Summary</title>
                 <style>
                   body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
                   h1, h2 { color: #1e40af; }
@@ -3131,10 +3131,10 @@
 
       // Final initialization message
       setTimeout(() => {
-        showNotification('🚀 Enhanced Morweb form loaded! Hover over ? icons for help.', 'success');
+        showNotification('🚀 Enhanced BREN7 form loaded! Hover over ? icons for help.', 'success');
       }, 1000);
 
-      console.log('🎉 Morweb Enhanced Onboarding Form v2.0 - Fully Loaded!');
+      console.log('🎉 BREN7 Enhanced Onboarding Form v2.0 - Fully Loaded!');
       console.log('Features: Smart suggestions, drag-drop prioritization, auto-save, collaboration, advanced analytics');
       console.log('Shortcuts: Ctrl+S (save), Ctrl+P (summary), Tab+Enter (next), Esc (skip)');
 
