@@ -569,8 +569,27 @@
       to { transform: rotate(360deg); }
     }
   </style>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/app-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body class="app-page">
+  <div class="grid-background"></div>
+  <div class="main-wrapper app-wrapper">
+    <header class="app-header">
+      <div class="header-content">
+        <div class="logo-wrapper">
+          <div class="logo">BREN<span class="accent">7</span></div>
+          <div class="logo-underline"></div>
+        </div>
+        <p class="tagline">Web Tools & Experiments</p>
+      </div>
+    </header>
+    <main class="app-main">
+      <div class="app-content">
+
   <!-- Loading Overlay -->
   <div class="loading-overlay" id="loadingOverlay">
     <div class="loading-spinner"></div>
@@ -1708,7 +1727,29 @@
             ${headerHtml}
             <div class="email-body">${emailHtml}</div>
             ${footerCombined}
-          </body>
+                </div>
+    </main>
+    <footer class="app-footer">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="https://discordapp.com/users/Bliss#6318" class="social-link" target="_blank" rel="noopener" aria-label="Discord">
+            <i class="fab fa-discord"></i>
+            <span>Discord</span>
+          </a>
+          <a href="https://github.com/brentjlaf" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+        <div class="footer-info">
+          <p>&copy; <span id="current-year"></span> BREN7. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+
+</body>
         </html>
       `;
 

@@ -1,0 +1,291 @@
+/* Shared application theme for BREN7 tools */
+
+body.app-page {
+  font-family: var(--font-secondary, 'Raleway', sans-serif);
+  background: var(--color-bg, #000);
+  color: var(--color-light-text, #f5f5f5);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body.app-page a {
+  color: var(--color-accent, #5cccf4);
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+body.app-page a:hover,
+body.app-page a:focus {
+  color: var(--color-accent-hover, #33b0da);
+  opacity: 0.85;
+}
+
+.app-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  padding: 48px 20px 32px;
+  border-bottom: 1px solid var(--color-border, rgba(255, 255, 255, 0.1));
+  text-align: center;
+}
+
+.app-main {
+  flex: 1;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.app-content {
+  width: 100%;
+  max-width: min(1400px, 95vw);
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.12));
+  border-radius: 24px;
+  padding: 48px 40px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+}
+
+.app-content > *:first-child {
+  margin-top: 0;
+}
+
+.app-content > *:last-child {
+  margin-bottom: 0;
+}
+
+.app-content h1,
+.app-content h2,
+.app-content h3,
+.app-content h4,
+.app-content h5,
+.app-content h6 {
+  font-family: var(--font-primary, 'Oswald', sans-serif);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.app-content h1 {
+  font-size: clamp(2.5rem, 3vw + 1rem, 3.5rem);
+}
+
+.app-content h2 {
+  font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+}
+
+.app-content p,
+.app-content li,
+.app-content label,
+.app-content span {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.app-content ul,
+.app-content ol {
+  margin: 0 0 24px 24px;
+  padding-left: 24px;
+}
+
+.app-content code,
+.app-content pre {
+  font-family: 'Fira Code', 'Source Code Pro', monospace;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+body.app-page button,
+body.app-page input,
+body.app-page select,
+body.app-page textarea {
+  background: rgba(10, 10, 10, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.92);
+  padding: 12px 16px;
+  border-radius: 12px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+body.app-page input:focus,
+body.app-page select:focus,
+body.app-page textarea:focus {
+  outline: none;
+  border-color: var(--color-accent, #5cccf4);
+  box-shadow: 0 0 0 3px rgba(92, 204, 244, 0.25);
+}
+
+body.app-page button,
+body.app-page .btn,
+body.app-page button.btn-primary,
+body.app-page button.btn-secondary,
+body.app-page a.btn {
+  background: linear-gradient(135deg, var(--color-accent, #5cccf4), #2d9ac0);
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(92, 204, 244, 0.25);
+}
+
+body.app-page button:hover,
+body.app-page .btn:hover,
+body.app-page button.btn-primary:hover,
+body.app-page button.btn-secondary:hover,
+body.app-page a.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 32px rgba(92, 204, 244, 0.35);
+  color: #000;
+}
+
+body.app-page button:disabled,
+body.app-page .btn:disabled,
+body.app-page button.btn-primary:disabled,
+body.app-page button.btn-secondary:disabled,
+body.app-page a.btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+body.app-page table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+body.app-page table th,
+body.app-page table td {
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.app-page table thead th {
+  font-family: var(--font-primary, 'Oswald', sans-serif);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+body.app-page table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+body.app-page .container,
+body.app-page .card,
+body.app-page .card-body,
+body.app-page .card-header,
+body.app-page .panel,
+body.app-page .panel-body,
+body.app-page .tool-section,
+body.app-page .tool-card,
+body.app-page .section-block,
+body.app-page .result-card,
+body.app-page .stat-card,
+body.app-page .module,
+body.app-page .content-section,
+body.app-page .results,
+body.app-page .results-card,
+body.app-page .results-wrapper,
+body.app-page .info-box,
+body.app-page .status-card,
+body.app-page .insight-card,
+body.app-page .detail-card,
+body.app-page .summary-card,
+body.app-page .data-card,
+body.app-page .form-card,
+body.app-page .tab-content,
+body.app-page .accordion-item,
+body.app-page .accordion-body {
+  background: rgba(10, 10, 10, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+body.app-page .card-header,
+body.app-page .panel-heading,
+body.app-page .accordion-header {
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+body.app-page .badge,
+body.app-page .label,
+body.app-page .tag,
+body.app-page .status {
+  background: rgba(92, 204, 244, 0.18);
+  color: rgba(92, 204, 244, 0.95);
+  border-radius: 999px;
+  padding: 6px 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.app-footer {
+  padding: 32px 20px 48px;
+  border-top: 1px solid var(--color-border, rgba(255, 255, 255, 0.1));
+}
+
+.app-footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.app-footer .social-links {
+  display: flex;
+  gap: 24px;
+}
+
+.app-footer .social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-family: var(--font-secondary, 'Raleway', sans-serif);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.app-footer .social-link i {
+  font-size: 1.2rem;
+}
+
+.app-footer .footer-info p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .app-content {
+    padding: 32px 24px;
+  }
+
+  .app-footer .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
