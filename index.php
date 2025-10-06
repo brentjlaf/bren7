@@ -80,6 +80,10 @@
         </div>
         <span class="progress-text">LOADING...</span>
       </div>
+
+      <div class="projects-cta">
+        <a href="projects.php" class="nav-link">Browse Live Projects</a>
+      </div>
     </div>
   </main>
 
