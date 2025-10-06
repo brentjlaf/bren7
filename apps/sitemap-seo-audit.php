@@ -216,24 +216,24 @@ if (!empty($_GET['export']) && $_GET['export'] == '1' && !empty($all_results)) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>SEO Sitemap Audit</title>
+  <title>SEO Sitemap Audit – Technical Checks Dashboard</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Run automated SEO checks across sitemap URLs to verify metadata, headings, and performance indicators with the BREN7 SEO Sitemap Audit tool.">
+  <meta name="keywords" content="sitemap seo audit, technical seo scanner, metadata checker, web performance audit, Morweb tools">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="SEO Sitemap Audit – Technical Checks Dashboard">
+  <meta property="og:description" content="Validate titles, descriptions, headings, and core vitals across your sitemap with the BREN7 SEO Sitemap Audit dashboard.">
+  <meta property="og:url" content="https://bren7.com/apps/sitemap-seo-audit.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="SEO Sitemap Audit – Technical Checks Dashboard">
+  <meta name="twitter:description" content="Scan sitemap URLs for metadata and SEO issues using the BREN7 SEO Sitemap Audit tool.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

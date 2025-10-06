@@ -4,23 +4,23 @@
   <!-- Primary Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BREN7 – Animation & Effects</title>
-  <meta name="description" content="Explore interactive web tools, mini-games, and experiments from BREN7. Try out Trakster Beat Maker, Zen Bubbles, accessibility tools, and more.">
-  <meta name="keywords" content="BREN7, web projects, beat maker, accessibility tools, game prototypes, web development, experiments, utilities">
+  <title>CSS Animation Effects Gallery – BREN7</title>
+  <meta name="description" content="Build and preview CSS animations with presets, custom keyframes, and live code export using the BREN7 Animation Effects Gallery.">
+  <meta name="keywords" content="CSS animation builder, keyframe editor, animation presets, web design tool, animation preview">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph / Facebook & LinkedIn -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse through a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="CSS Animation Effects Gallery – BREN7">
+  <meta property="og:description" content="Design and preview CSS animations with customizable timing, presets, and exportable keyframes in the BREN7 Animation Effects Gallery.">
+  <meta property="og:url" content="https://bren7.com/apps/animation-effects-gallery.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="CSS Animation Effects Gallery – BREN7">
+  <meta name="twitter:description" content="Experiment with CSS animations, adjust keyframes, and export custom effects in this interactive gallery by BREN7.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

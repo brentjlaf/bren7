@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Professional Email Builder</title>
+  <title>Professional Email Builder – Drag & Drop Template Creator</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Compose polished marketing emails with drag-and-drop layouts, live previews, and responsive testing inside the BREN7 Professional Email Builder.">
+  <meta name="keywords" content="email builder, drag and drop email editor, marketing template creator, responsive email preview, newsletter design tool">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="Professional Email Builder – Drag & Drop Template Creator">
+  <meta property="og:description" content="Build campaign-ready email templates with live previews and quick exports using the Professional Email Builder by BREN7.">
+  <meta property="og:url" content="https://bren7.com/apps/professional-email-builder.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="Professional Email Builder – Drag & Drop Template Creator">
+  <meta name="twitter:description" content="Design responsive marketing emails quickly with BREN7's Professional Email Builder.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

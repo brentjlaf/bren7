@@ -345,24 +345,24 @@ function formatBytes($size, $precision = 2) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Performance Auditor</title>
+    <title>MW Performance Auditor – Sitemap Speed Scores</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Capture Lighthouse performance metrics and core vitals for each sitemap URL with the streamlined MW Performance Auditor from BREN7.">
+  <meta name="keywords" content="lighthouse performance auditor, sitemap speed analysis, web vitals checker, performance dashboard, Morweb tools">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="MW Performance Auditor – Sitemap Speed Scores">
+  <meta property="og:description" content="Compare page speed metrics across sitemap URLs with the MW Performance Auditor by BREN7.">
+  <meta property="og:url" content="https://bren7.com/apps/sitemap-performance-audit.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="MW Performance Auditor – Sitemap Speed Scores">
+  <meta name="twitter:description" content="Review Lighthouse performance scores across your sitemap with this BREN7 tool.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

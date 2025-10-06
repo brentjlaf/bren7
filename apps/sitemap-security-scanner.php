@@ -350,24 +350,24 @@ function getRiskLevel($filename) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Security Scanner</title>
+    <title>MW Security Scanner – Sitemap Risk Review</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Evaluate sitemap URLs for security signals, mixed content, and vulnerable assets with the BREN7 MW Security Scanner.">
+  <meta name="keywords" content="security sitemap scanner, mixed content checker, vulnerability audit, website security review, Morweb security tool">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="MW Security Scanner – Sitemap Risk Review">
+  <meta property="og:description" content="Scan sitemap endpoints for SSL issues, redirects, and exposed files using the BREN7 MW Security Scanner.">
+  <meta property="og:url" content="https://bren7.com/apps/sitemap-security-scanner.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="MW Security Scanner – Sitemap Risk Review">
+  <meta name="twitter:description" content="Audit sitemap URLs for security gaps with the MW Security Scanner by BREN7.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

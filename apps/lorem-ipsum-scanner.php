@@ -89,24 +89,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorem Ipsum Checker</title>
+    <title>Lorem Ipsum Checker – Placeholder Text Scanner</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Scan websites or sitemaps to detect leftover lorem ipsum and placeholder copy with the BREN7 Lorem Ipsum Checker.">
+  <meta name="keywords" content="lorem ipsum checker, placeholder text scanner, content quality tool, copywriting QA, sitemap scan">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="Lorem Ipsum Checker – Placeholder Text Scanner">
+  <meta property="og:description" content="Identify lorem ipsum and filler copy across URLs and sitemaps with the automated BREN7 Lorem Ipsum Checker.">
+  <meta property="og:url" content="https://bren7.com/apps/lorem-ipsum-scanner.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="Lorem Ipsum Checker – Placeholder Text Scanner">
+  <meta name="twitter:description" content="Quickly surface lorem ipsum across your content with the BREN7 Lorem Ipsum Checker.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

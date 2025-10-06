@@ -229,24 +229,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Image Scanner</title>
+    <title>MW Image Scanner – Sitemap Media Audit</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Crawl a sitemap to audit image usage, detect duplicates, and compile alt text insights with the BREN7 MW Image Scanner.">
+  <meta name="keywords" content="image sitemap scanner, media audit tool, alt text review, duplicate image finder, Morweb image analysis">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="MW Image Scanner – Sitemap Media Audit">
+  <meta property="og:description" content="Analyze sitemap images, uncover duplicates, and review alt text coverage with the BREN7 MW Image Scanner.">
+  <meta property="og:url" content="https://bren7.com/apps/sitemap-image-scanner.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="MW Image Scanner – Sitemap Media Audit">
+  <meta name="twitter:description" content="Scan your sitemap to review image coverage and alt text with the MW Image Scanner by BREN7.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

@@ -155,24 +155,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitemap to CSV Exporter</title>
+    <title>Sitemap to CSV Exporter – Enhanced Metadata Capture</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Convert sitemap XML into enriched CSV files complete with titles, descriptions, and custom fields using the enhanced exporter from BREN7.">
+  <meta name="keywords" content="sitemap to csv exporter, metadata scraper, url inventory tool, seo data export, Morweb sitemap exporter">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="Sitemap to CSV Exporter – Enhanced Metadata Capture">
+  <meta property="og:description" content="Download sitemap URLs with titles, descriptions, and change frequencies using the BREN7 enhanced exporter.">
+  <meta property="og:url" content="https://bren7.com/apps/sitemap-exporter-enhanced.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="Sitemap to CSV Exporter – Enhanced Metadata Capture">
+  <meta name="twitter:description" content="Export sitemap data with metadata fields using BREN7's enhanced CSV exporter.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

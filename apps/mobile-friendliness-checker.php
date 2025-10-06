@@ -412,24 +412,24 @@ function analyzeDeviceCompatibility($html, $css, $dimensions) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Friendliness Checker</title>
+    <title>Mobile Friendliness Checker – Responsive Design Audit</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Analyze viewport settings, tap targets, and responsive layout issues for sitemap URLs with the BREN7 Mobile Friendliness Checker.">
+  <meta name="keywords" content="mobile friendliness checker, responsive design audit, mobile usability tool, tap target analysis, Morweb mobile audit">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="Mobile Friendliness Checker – Responsive Design Audit">
+  <meta property="og:description" content="Evaluate mobile usability scores and responsive issues across sitemap URLs with this BREN7 tool.">
+  <meta property="og:url" content="https://bren7.com/apps/mobile-friendliness-checker.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="Mobile Friendliness Checker – Responsive Design Audit">
+  <meta name="twitter:description" content="Review responsive issues and tap target sizes with the BREN7 Mobile Friendliness Checker.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

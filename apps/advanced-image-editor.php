@@ -11,24 +11,24 @@
   </script>
 
   <meta charset="UTF-8">
-  <title>Advanced Image Editor</title>
+  <title>Advanced Image Editor – Browser-Based Photo Studio</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Crop, resize, filter, and annotate images directly in your browser with the BREN7 Advanced Image Editor powered by Cropper.js.">
+  <meta name="keywords" content="advanced image editor, browser photo editor, cropper tool, image annotation, online image editing">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="Advanced Image Editor – Browser-Based Photo Studio">
+  <meta property="og:description" content="Edit, crop, and enhance images in real time using the BREN7 Advanced Image Editor.">
+  <meta property="og:url" content="https://bren7.com/apps/advanced-image-editor.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="Advanced Image Editor – Browser-Based Photo Studio">
+  <meta name="twitter:description" content="Adjust, crop, and filter images in-browser with the BREN7 Advanced Image Editor.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

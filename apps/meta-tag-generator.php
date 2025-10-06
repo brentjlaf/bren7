@@ -2,24 +2,24 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <title>Meta Tag Generator from URL</title>
+  <title>Meta Tag Generator – Fetch & Build SEO Tags</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Pull titles, descriptions, and social tags from any URL and generate ready-to-use HTML metadata with the BREN7 Meta Tag Generator.">
+  <meta name="keywords" content="meta tag generator, seo metadata tool, fetch url metadata, open graph builder, head tag generator">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="Meta Tag Generator – Fetch & Build SEO Tags">
+  <meta property="og:description" content="Extract and customize SEO, Open Graph, and Twitter metadata from any webpage with this BREN7 tool.">
+  <meta property="og:url" content="https://bren7.com/apps/meta-tag-generator.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="Meta Tag Generator – Fetch & Build SEO Tags">
+  <meta name="twitter:description" content="Generate complete SEO and social tags from any URL using BREN7's Meta Tag Generator.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->
