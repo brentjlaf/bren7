@@ -15,7 +15,7 @@
   <meta property="og:title" content="Trakster Beat Maker">
   <meta property="og:description" content="Make beats in your browser with Trakster — fast, free, and no sign-up required.">
   <meta property="og:image" content="https://bren7.com/Trakster/Trakster-Logo.png">
-  <meta property="og:url" content="https://bren7.com/Trakster/Trakster.html">
+  <meta property="og:url" content="https://bren7.com/Trakster/trakster-beat-maker.php">
   <meta property="og:type" content="website">
 
   <!-- Twitter Card Meta Tags -->
