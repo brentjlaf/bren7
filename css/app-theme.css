@@ -115,6 +115,11 @@ body.app-page textarea {
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
+body.app-page ::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+  opacity: 1;
+}
+
 body.app-page input:focus,
 body.app-page select:focus,
 body.app-page textarea:focus {
@@ -236,6 +241,70 @@ body.app-page .status {
   padding: 6px 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+/* Override common Bootstrap utility backgrounds so content stays legible */
+body.app-page .bg-white,
+body.app-page .bg-light,
+body.app-page .bg-body,
+body.app-page .card,
+body.app-page .modal-content,
+body.app-page .accordion-item,
+body.app-page .list-group-item,
+body.app-page .dropdown-menu,
+body.app-page .offcanvas,
+body.app-page .popover,
+body.app-page .tooltip-inner {
+  background-color: rgba(15, 15, 15, 0.88) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+body.app-page .modal-header,
+body.app-page .modal-footer {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+body.app-page .btn-close {
+  filter: invert(1);
+}
+
+body.app-page .list-group-item + .list-group-item {
+  border-top-color: rgba(255, 255, 255, 0.12);
+}
+
+body.app-page .table {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body.app-page .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.app-page .table-striped > tbody > tr:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+body.app-page .table-hover > tbody > tr:hover {
+  background-color: rgba(92, 204, 244, 0.12);
+}
+
+body.app-page .table-bordered > :not(caption) > * {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+body.app-page .text-dark,
+body.app-page .text-body,
+body.app-page .text-black,
+body.app-page .text-black-50 {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+body.app-page .text-muted,
+body.app-page .form-text,
+body.app-page .text-secondary,
+body.app-page .text-body-secondary {
+  color: rgba(255, 255, 255, 0.65) !important;
 }
 
 .app-footer {
