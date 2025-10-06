@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Migration Planner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <style>
+    :root{
+      --bg:#0f1115; --panel:#151823; --muted:#9aa3b2; --text:#e8ebf1; --accent:#5b8cff; --accent-2:#ff6ec7; --danger:#ff5d5d; --warning:#ffc857; --ok:#5ec6a8;
+      --border:#24283a; --chip:#1b2030;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font-family:Montserrat,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif; background:linear-gradient(180deg,#0d0f14 0%, #0f1115 100%); color:var(--text)}
+    .app{display:grid; grid-template-columns: 320px 1fr; gap:18px; padding:20px; max-width:1400px; margin:0 auto}
+    header{grid-column:1/-1; display:flex; align-items:center; justify-content:space-between; background:var(--panel); border:1px solid var(--border); padding:16px 18px; border-radius:16px}
+    h1{margin:0; font-size:1.25rem; letter-spacing:.2px}
+    .badge{display:inline-flex; gap:6px; align-items:center; background:var(--chip); color:var(--muted); border:1px solid var(--border); padding:6px 10px; border-radius:999px; font-size:.8rem}
+    .controls{display:flex; flex-wrap:wrap; gap:8px}
+    .btn{appearance:none; border:none; border-radius:12px; padding:10px 14px; background:var(--chip); color:var(--text); cursor:pointer; border:1px solid var(--border); font-weight:600}
+    .btn:hover{filter:brightness(1.15)}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#0b0d12}
+    .btn.danger{background:linear-gradient(135deg,#ff8c8c,var(--danger)); color:#0b0d12}
+    .btn.ghost{background:transparent}
+
+    /* Sidebar */
+    .sidebar{background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:16px; position:sticky; top:16px; height:max-content}
+    .sidebar h2{font-size:1rem; margin:0 0 10px}
+    .kpi{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:12px}
+    .kpi .card{background:var(--chip); border:1px solid var(--border); border-radius:12px; padding:10px}
+    .kpi .n{font-size:1.2rem; font-weight:800}
+    .progress{height:8px; background:#0b0d12; border-radius:999px; border:1px solid var(--border); overflow:hidden}
+    .progress > span{display:block; height:100%; width:0%; background:linear-gradient(90deg,var(--accent),var(--accent-2))}
+
+    details.tips{margin-top:10px; border-top:1px dashed var(--border); padding-top:10px}
+    details.tips summary{cursor:pointer; color:var(--muted)}
+    .tips-list{margin:10px 0 0; padding-left:18px; color:var(--muted)}
+    .tips-list li{margin:6px 0}
+
+    /* Main */
+    .main{display:flex; flex-direction:column; gap:12px}
+    .panel{background:var(--panel); border:1px solid var(--border); border-radius:16px}
+    .toolbar{display:flex; gap:8px; padding:12px; border-bottom:1px solid var(--border); align-items:center; flex-wrap:wrap}
+    .toolbar input[type="search"]{flex:1 1 260px; padding:10px 12px; border-radius:12px; border:1px solid var(--border); background:#0c0f16; color:var(--text)}
+    .table-wrap{overflow:auto}
+    table{width:100%; border-collapse:separate; border-spacing:0}
+    th, td{padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:top}
+    thead th{position:sticky; top:0; background:linear-gradient(180deg,#171b27,#151823); z-index:1}
+    tbody tr:hover{background:#121621}
+    th:first-child, td:first-child{position:sticky; left:0; background:inherit}
+    .chip{display:inline-block; padding:4px 8px; border-radius:999px; font-size:.75rem; border:1px solid var(--border); background:#121624}
+    .chip.warn{background:#241b12; border-color:#44321b; color:#ffbc6e}
+    .chip.ok{background:#12241d; border-color:#1f3b2f; color:#7ed7bb}
+    .chip.bad{background:#2a1515; border-color:#4a2020; color:#ff9b9b}
+    .muted{color:var(--muted)}
+    .nowrap{white-space:nowrap}
+
+    /* Dialogs */
+    .modal{display:none; position:fixed; inset:0; background:rgba(6,7,10,.72); backdrop-filter: blur(6px); align-items:center; justify-content:center; z-index:50}
+    .modal .box{width:min(920px,92vw); background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:16px}
+    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:10px}
+    .grid > .col-6{grid-column:span 6}
+    .grid > .col-4{grid-column:span 4}
+    .grid > .col-12{grid-column:span 12}
+    .input, select, textarea{width:100%; padding:10px 12px; border-radius:12px; border:1px solid var(--border); background:#0c0f16; color:var(--text)}
+    label{font-size:.85rem; color:var(--muted); display:block; margin:6px 0}
+
+    .empty{padding:30px; text-align:center; color:var(--muted)}
+    .pill{display:inline-flex; align-items:center; gap:6px; border:1px dashed var(--border); padding:6px 10px; border-radius:999px; color:var(--muted)}
+    .row-actions{display:flex; gap:6px}
+    .link{color:var(--accent); text-decoration:none}
+    .drag{cursor:grab}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div style="display:flex; align-items:center; gap:10px">
+        <h1>🧭 Website Migration Planner</h1>
+        <span class="badge" id="duplicateBadge" title="Duplicate URLs detected" style="display:none">⚠️ Duplicates</span>
+      </div>
+      <div class="controls">
+        <button class="btn primary" id="addItemBtn">➕ Add Item</button>
+        <button class="btn" id="bulkAddBtn">📥 Bulk Add</button>
+        <button class="btn" id="importBtn">📂 Import JSON</button>
+        <button class="btn" id="exportJsonBtn">⬇️ Export JSON</button>
+        <button class="btn" id="exportCsvBtn">⬇️ Export CSV</button>
+        <button class="btn ghost" id="clearBtn" title="Clear all items">🗑 Clear</button>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <h2>Overview</h2>
+      <div class="kpi">
+        <div class="card"><div class="label muted">Total Items</div><div class="n" id="kTotal">0</div></div>
+        <div class="card"><div class="label muted">Pages / Media</div><div class="n"><span id="kPages">0</span> / <span id="kMedia">0</span></div></div>
+        <div class="card"><div class="label muted">Completed Meta</div><div class="n" id="kMeta">0%</div><div class="progress" aria-label="Meta completeness"><span id="metaBar"></span></div></div>
+        <div class="card"><div class="label muted">Images w/ Alt</div><div class="n" id="kAlt">0%</div></div>
+      </div>
+      <div class="card" style="background:var(--chip); border:1px solid var(--border); border-radius:12px; padding:10px; margin-bottom:8px">
+        <div class="label muted">Domains</div>
+        <div id="domainChips" style="display:flex; flex-wrap:wrap; gap:6px; margin-top:6px"></div>
+      </div>
+      <details class="tips" open>
+        <summary>Best practices & tips</summary>
+        <ul class="tips-list">
+          <li>Map <strong>301 redirects</strong> from every old URL to a new canonical URL.</li>
+          <li>Freeze content before cutover; track changes after freeze.</li>
+          <li>Compress & convert images (prefer <code>WebP/AVIF</code>), set <code>height/width</code>, and provide <strong>alt text</strong>.</li>
+          <li>Use consistent, lowercase, hyphenated filenames; remove spaces and special chars.</li>
+          <li>Keep <strong>titles (≤60 chars)</strong> & meta descriptions (≤155 chars) unique.</li>
+          <li>Recreate structured data, hreflang, canonical, and noindex rules.</li>
+          <li>Migrate PDFs only when needed; offer HTML alternatives.</li>
+          <li>Post-launch: crawl for errors (404/500), validate redirects, resubmit sitemaps, update Analytics/Search Console.</li>
+          <li>Accessibility: color contrast, keyboard traps, focus order, form labels, media captions.</li>
+          <li>QA checklist: key journeys, search, forms, login, 3rd-party embeds, and tracking.</li>
+        </ul>
+      </details>
+    </aside>
+
+    <section class="main">
+      <div class="panel">
+        <div class="toolbar">
+          <input type="search" id="search" placeholder="Filter by URL, title, owner, notes…" />
+          <select id="filterType" class="input" style="max-width:170px">
+            <option value="">All Types</option>
+            <option>Page</option>
+            <option>Image</option>
+            <option>File</option>
+            <option>Other</option>
+          </select>
+          <select id="filterStatus" class="input" style="max-width:190px">
+            <option value="">All Status</option>
+            <option>To migrate</option>
+            <option>Migrated</option>
+            <option>Needs review</option>
+          </select>
+        </div>
+        <div class="table-wrap">
+          <table id="itemsTable">
+            <thead>
+              <tr>
+                <th class="nowrap">#</th>
+                <th>URL / Path</th>
+                <th>Type</th>
+                <th>Title</th>
+                <th>Notes</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Alt Text</th>
+                <th>Redirect From</th>
+                <th>Owner</th>
+                <th>Due</th>
+                <th class="nowrap">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <div id="emptyState" class="empty">No items yet. Add an item or use <span class="pill">📥 Bulk Add</span> to paste URLs.</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Add / Edit Modal -->
+  <div class="modal" id="itemModal" aria-hidden="true" role="dialog">
+    <div class="box">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:6px">
+        <h2 id="modalTitle" style="margin:0; font-size:1.05rem">Add Item</h2>
+        <button class="btn" id="closeItemModal">✖</button>
+      </div>
+      <form id="itemForm">
+        <div class="grid">
+          <div class="col-12">
+            <label>URL or file path</label>
+            <input class="input" name="url" placeholder="https://example.com/page or /files/brochure.pdf" required />
+          </div>
+          <div class="col-4">
+            <label>Type</label>
+            <select class="input" name="type">
+              <option>Page</option>
+              <option>Image</option>
+              <option>File</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <label>Priority</label>
+            <select class="input" name="priority">
+              <option>High</option>
+              <option selected>Medium</option>
+              <option>Low</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <label>Status</label>
+            <select class="input" name="status">
+              <option selected>To migrate</option>
+              <option>Migrated</option>
+              <option>Needs review</option>
+            </select>
+          </div>
+          <div class="col-6">
+            <label>Title</label>
+            <input class="input" name="title" placeholder="Page title or asset name" />
+          </div>
+          <div class="col-6">
+            <label>Owner</label>
+            <input class="input" name="owner" placeholder="Who is responsible?" />
+          </div>
+          <div class="col-6">
+            <label>Alt Text (for images)</label>
+            <input class="input" name="alt" placeholder="Describe the image meaning" />
+          </div>
+          <div class="col-6">
+            <label>Redirect From (old URL)</label>
+            <input class="input" name="redirect" placeholder="Old path to 301 to this item" />
+          </div>
+          <div class="col-12">
+            <label>Notes</label>
+            <textarea class="input" name="notes" rows="3" placeholder="What to change, compress, rewrite, or combine"></textarea>
+          </div>
+          <div class="col-4">
+            <label>Due Date</label>
+            <input class="input" name="due" type="date" />
+          </div>
+          <div class="col-8" style="display:flex; align-items:end; justify-content:flex-end; gap:8px">
+            <button class="btn" type="button" id="suggestMetaBtn" title="Suggest basic metadata">✨ Suggest</button>
+            <button class="btn primary" type="submit">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bulk Add Modal -->
+  <div class="modal" id="bulkModal" aria-hidden="true" role="dialog">
+    <div class="box">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:6px">
+        <h2 style="margin:0; font-size:1.05rem">Bulk Add URLs</h2>
+        <button class="btn" id="closeBulkModal">✖</button>
+      </div>
+      <div class="grid">
+        <div class="col-12">
+          <label>Paste one URL per line (we auto-detect type by extension)</label>
+          <textarea class="input" id="bulkTextarea" rows="10" placeholder="https://example.com/
+https://example.com/about
+/files/menu.pdf
+/images/hero.jpg"></textarea>
+        </div>
+        <div class="col-12" style="display:flex; gap:8px; justify-content:flex-end">
+          <button class="btn" id="bulkDetect">🔎 Preview</button>
+          <button class="btn primary" id="bulkAddConfirm">Add Items</button>
+        </div>
+        <div class="col-12">
+          <div id="bulkPreview" class="muted"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <input id="fileInput" type="file" accept="application/json" style="display:none" />
+
+  <script>
+    // --- State ---
+    let items = JSON.parse(localStorage.getItem('mw_migration_items')||'[]');
+    let editingIndex = null;
+
+    const extType = (u)=>{
+      const m = String(u).toLowerCase().match(/\.([a-z0-9]+)(?:$|\?|#)/);
+      const ext = m? m[1]: '';
+      const img = ['jpg','jpeg','png','webp','gif','svg','avif'];
+      const doc = ['pdf','doc','docx','ppt','pptx','xls','xlsx','csv'];
+      if(img.includes(ext)) return 'Image';
+      if(doc.includes(ext)) return 'File';
+      return 'Page';
+    }
+    const domainOf = (u)=>{try{const a=document.createElement('a'); a.href=u; return a.hostname||'(local)'}catch(e){return '(local)'}}
+
+    const save = ()=>localStorage.setItem('mw_migration_items', JSON.stringify(items));
+
+    // --- Rendering ---
+    function render(){
+      const tbody = $('#tbody').empty();
+      const q = $('#search').val().toLowerCase();
+      const ft = $('#filterType').val();
+      const fs = $('#filterStatus').val();
+
+      const filtered = items.filter((it)=>{
+        const text = [it.url,it.title,it.owner,it.notes,it.redirect].join(' ').toLowerCase();
+        const qok = !q || text.includes(q);
+        const tok = !ft || it.type===ft;
+        const sok = !fs || it.status===fs;
+        return qok && tok && sok;
+      });
+
+      if(items.length===0){
+        $('#emptyState').show();
+      } else {
+        $('#emptyState').hide();
+      }
+
+      // Duplicates by URL
+      const counts = {};
+      for(const it of items){ const key=(it.url||'').trim(); if(!key) continue; counts[key]=(counts[key]||0)+1 }
+      const dupCount = Object.values(counts).filter(n=>n>1).length;
+      $('#duplicateBadge').toggle(dupCount>0);
+
+      filtered.forEach((it, idx)=>{
+        const i = items.indexOf(it);
+        const isDup = counts[(it.url||'').trim()] > 1;
+        const tr = $('<tr />');
+        tr.append(`<td class="nowrap drag" title="Drag handle">☰ ${(i+1)}</td>`);
+        tr.append(`<td><a href="${it.url}" target="_blank" class="link">${escapeHtml(it.url)}</a>${isDup? ' <span class="chip warn" title="Duplicate URL in list">duplicate</span>':''}</td>`);
+        tr.append(`<td>${chip(it.type)}</td>`);
+        tr.append(`<td>${escapeHtml(it.title||'')}</td>`);
+        tr.append(`<td class="muted">${escapeHtml(it.notes||'')}</td>`);
+        tr.append(`<td>${prioChip(it.priority)}</td>`);
+        tr.append(`<td>${statusChip(it.status)}</td>`);
+        tr.append(`<td>${escapeHtml(it.alt||'')}</td>`);
+        tr.append(`<td class="muted">${escapeHtml(it.redirect||'')}</td>`);
+        tr.append(`<td>${escapeHtml(it.owner||'')}</td>`);
+        tr.append(`<td class="nowrap">${escapeHtml(it.due||'')}</td>`);
+        const actions = $('<td class="row-actions nowrap" />');
+        actions.append($('<button class="btn" title="Edit">✏️</button>').on('click',()=>openEdit(i)));
+        actions.append($('<button class="btn danger" title="Delete">🗑</button>').on('click',()=>del(i)));
+        tr.append(actions);
+        tbody.append(tr);
+      });
+
+      updateKpis();
+    }
+
+    function chip(t){return `<span class="chip">${escapeHtml(t)}</span>`}
+    function prioChip(p){
+      const cls = p==='High'? 'bad': p==='Low'? 'ok': '';
+      return `<span class="chip ${cls}">${escapeHtml(p)}</span>`
+    }
+    function statusChip(s){
+      const map={ 'To migrate':'warn', 'Migrated':'ok', 'Needs review':'bad' };
+      return `<span class="chip ${map[s]||''}">${escapeHtml(s)}</span>`
+    }
+
+    function updateKpis(){
+      $('#kTotal').text(items.length);
+      const pages = items.filter(i=>i.type==='Page').length;
+      const media = items.filter(i=>i.type==='Image' || i.type==='File').length;
+      $('#kPages').text(pages); $('#kMedia').text(media);
+      const metaHave = items.filter(i=>trim(i.title).length>0).length;
+      const metaPct = items.length? Math.round(metaHave/items.length*100):0;
+      $('#kMeta').text(metaPct+'%'); $('#metaBar').css('width', metaPct+'%');
+      const img = items.filter(i=>i.type==='Image');
+      const imgAltPct = img.length? Math.round(img.filter(i=>trim(i.alt).length>0).length/img.length*100):0;
+      $('#kAlt').text(imgAltPct+'%');
+
+      // Domains
+      const domains = {};
+      items.forEach(i=>{ const d=domainOf(i.url||''); domains[d]=(domains[d]||0)+1; });
+      const chips=$('#domainChips').empty();
+      Object.entries(domains).sort((a,b)=>b[1]-a[1]).slice(0,12).forEach(([d,n])=>{
+        chips.append(`<span class="pill">${escapeHtml(d)} · ${n}</span>`)
+      })
+    }
+
+    // --- CRUD ---
+    function openAdd(){ editingIndex=null; $('#modalTitle').text('Add Item'); resetForm(); $('#itemModal').fadeIn(120) }
+    function openEdit(i){ editingIndex=i; $('#modalTitle').text('Edit Item'); fillForm(items[i]); $('#itemModal').fadeIn(120) }
+    function closeItem(){ $('#itemModal').fadeOut(120) }
+    function del(i){ if(confirm('Delete this item?')){ items.splice(i,1); save(); render(); } }
+
+    function resetForm(){ $('#itemForm')[0].reset(); }
+    function fillForm(it){ for(const [k,v] of Object.entries(it)){ const el=$(`[name="${k}"]`); if(el.length) el.val(v) } }
+
+    function submitForm(e){
+      e.preventDefault();
+      const it = formToObj($('#itemForm'));
+      if(!it.type || it.type==='Page'){ it.type = extType(it.url) }
+      if(editingIndex==null){ items.push(it) } else { items[editingIndex]=it }
+      save(); render(); closeItem();
+    }
+
+    function formToObj($form){
+      const o={};
+      $form.serializeArray().forEach(({name,value})=>{ o[name]=value||'' });
+      return o;
+    }
+
+    // --- Bulk Add ---
+    function openBulk(){ $('#bulkPreview').empty(); $('#bulkTextarea').val(''); $('#bulkModal').fadeIn(120) }
+    function closeBulk(){ $('#bulkModal').fadeOut(120) }
+    function detectBulk(){
+      const lines = $('#bulkTextarea').val().split(/\r?\n/).map(s=>s.trim()).filter(Boolean);
+      if(lines.length===0){ $('#bulkPreview').html('<span class="muted">Nothing to preview.</span>'); return }
+      const rows = lines.map(u=>({url:u,type:extType(u)}));
+      const html = rows.map(r=>`<div class="pill">${escapeHtml(r.url)} <span class="muted">· ${r.type}</span></div>`).join(' ');
+      $('#bulkPreview').html(html);
+    }
+    function bulkAddConfirm(){
+      const lines = $('#bulkTextarea').val().split(/\r?\n/).map(s=>s.trim()).filter(Boolean);
+      if(lines.length===0) return;
+      lines.forEach(u=> items.push({url:u, type:extType(u), title:'', notes:'', priority:'Medium', status:'To migrate', alt:'', redirect:'', owner:'', due:''}));
+      save(); render(); closeBulk();
+    }
+
+    // --- Import / Export ---
+    function importJson(){ $('#fileInput').val(''); $('#fileInput')[0].click(); }
+    $('#fileInput').on('change', function(){
+      const file=this.files[0]; if(!file) return;
+      const reader = new FileReader();
+      reader.onload = (e)=>{
+        try{
+          const data = JSON.parse(e.target.result);
+          if(!Array.isArray(data)) throw new Error('Invalid format');
+          items = data; save(); render();
+        }catch(err){ alert('Import failed: '+err.message) }
+      };
+      reader.readAsText(file);
+    });
+
+    function exportJson(){ download('migration-items.json', JSON.stringify(items,null,2)) }
+    function exportCsv(){
+      const cols = ['url','type','title','notes','priority','status','alt','redirect','owner','due'];
+      const rows = [cols.join(',')].concat(items.map(it=> cols.map(c=> csvCell(it[c]||'')).join(',')));
+      download('migration-items.csv', rows.join('\n'));
+    }
+
+    function download(filename, text){
+      const blob = new Blob([text], {type:'text/plain'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob); a.download = filename; a.click();
+      URL.revokeObjectURL(a.href);
+    }
+
+    function csvCell(v){
+      const s = String(v).replaceAll('"','""');
+      return '"'+s+'"';
+    }
+
+    function clearAll(){ if(confirm('Clear all items?')){ items=[]; save(); render(); } }
+
+    // --- Utilities ---
+    const trim = (s)=> String(s||'').trim();
+    function escapeHtml(s){ return String(s||'').replace(/[&<>\"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[m])) }
+
+    // --- Suggest metadata button ---
+    function suggestMeta(){
+      const url = trim($('[name="url"]').val());
+      if(!url) return;
+      const titleEl = $('[name="title"]');
+      if(!trim(titleEl.val())){
+        const parts = url.replace(/^https?:\/\//,'').split(/[\/?#]/).filter(Boolean);
+        const slug = parts.slice(-1)[0]||'home';
+        const tidy = slug.replace(/[-_]+/g,' ').replace(/\.[a-z0-9]+$/,'');
+        titleEl.val(capitalize(tidy)+' | Migrated');
+      }
+      const type = $('[name="type"]').val();
+      if(type==='Image' && !trim($('[name="alt"]').val())){
+        $('[name="alt"]').val('Descriptive alt text for '+urlToName(url));
+      }
+    }
+    const capitalize = (s)=> s.split(' ').map(w=> w? w[0].toUpperCase()+w.slice(1):'').join(' ');
+    const urlToName = (u)=> u.split('/').pop().split('?')[0];
+
+    // --- Drag to reorder (simple) ---
+    let dragIndex=null;
+    $(document).on('mousedown', '.drag', function(){ dragIndex=$(this).closest('tr').index(); });
+    $(document).on('mouseup', function(){ dragIndex=null; });
+    $(document).on('mousemove', function(e){ if(dragIndex==null) return; });
+    // Row swap on click + Ctrl as a simple reordering UX (no external libs)
+    $(document).on('click', 'tbody tr', function(e){
+      if(!e.ctrlKey) return; // hold Ctrl and click a row to swap with the previously selected
+      const idx = $(this).index();
+      if(typeof window._swapIdx === 'number'){
+        const a = Math.min(window._swapIdx, idx), b = Math.max(window._swapIdx, idx);
+        const moved = items.splice(window._swapIdx,1)[0];
+        items.splice(idx,0,moved);
+        window._swapIdx = undefined; save(); render();
+      } else {
+        window._swapIdx = idx; $(this).css('outline','2px dashed var(--accent)');
+        setTimeout(()=>{$('tbody tr').css('outline','none')},1200)
+      }
+    });
+
+    // --- Events ---
+    $('#addItemBtn').on('click', openAdd);
+    $('#closeItemModal').on('click', closeItem);
+    $('#itemForm').on('submit', submitForm);
+    $('#suggestMetaBtn').on('click', suggestMeta);
+
+    $('#bulkAddBtn').on('click', openBulk);
+    $('#closeBulkModal').on('click', closeBulk);
+    $('#bulkDetect').on('click', detectBulk);
+    $('#bulkAddConfirm').on('click', bulkAddConfirm);
+
+    $('#importBtn').on('click', importJson);
+    $('#exportJsonBtn').on('click', exportJson);
+    $('#exportCsvBtn').on('click', exportCsv);
+    $('#clearBtn').on('click', clearAll);
+
+    $('#search, #filterType, #filterStatus').on('input change', render);
+
+    // Initial render
+    render();
+  </script>
+</body>
+</html>

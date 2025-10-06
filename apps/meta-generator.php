@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Meta Tag Generator from URL</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
+  <style>
+    body { padding: 2rem; }
+    textarea { font-family: monospace; }
+  </style>
+</head>
+<body>
+
+  <div class='container'>
+    <h1 class='mb-4 text-center'>Meta Tag Generator from URL</h1>
+
+    <div class='mb-4'>
+      <h2>About</h2>
+      <p>This tool fetches metadata from any public webpage URL and helps you generate the corresponding HTML meta tags for your site's <code>&lt;head&gt;</code> section.</p>
+    </div>
+
+    <div class='mb-4'>
+      <h2>Instructions</h2>
+      <ol>
+        <li>Enter a valid URL in the 'Enter a Page URL' field (must start with http or https).</li>
+        <li>Click <strong>Fetch and Fill Meta Info</strong> to load the page and auto-populate the form fields.</li>
+        <li>Review and edit the values for title, description, keywords, author, robots, and viewport as needed.</li>
+        <li>Click <strong>Generate Meta Tags</strong> to produce the HTML meta tags.</li>
+        <li>Copy the generated tags from the output textarea and paste them into your site's <code>&lt;head&gt;</code> section.</li>
+      </ol>
+    </div>
+
+    <div class='mb-3'>
+      <label for='urlInput' class='form-label'>Enter a Page URL</label>
+      <input type='text' class='form-control' id='urlInput' placeholder='https://example.com'>
+      <button class='btn btn-secondary mt-2' id='fetchMeta'>Fetch and Fill Meta Info</button>
+    </div>
+
+    <div class='row g-3'>
+      <div class='col-md-6'>
+        <label for='title' class='form-label'>Page Title</label>
+        <input type='text' class='form-control' id='title'>
+      </div>
+      <div class='col-md-6'>
+        <label for='description' class='form-label'>Meta Description</label>
+        <input type='text' class='form-control' id='description'>
+      </div>
+      <div class='col-md-6'>
+        <label for='keywords' class='form-label'>Meta Keywords</label>
+        <input type='text' class='form-control' id='keywords'>
+      </div>
+      <div class='col-md-6'>
+        <label for='author' class='form-label'>Author</label>
+        <input type='text' class='form-control' id='author'>
+      </div>
+      <div class='col-md-6'>
+        <label for='robots' class='form-label'>Robots Directive</label>
+        <input type='text' class='form-control' id='robots'>
+      </div>
+      <div class='col-md-6'>
+        <label for='viewport' class='form-label'>Viewport</label>
+        <input type='text' class='form-control' id='viewport'>
+      </div>
+      <div class='col-12 d-grid mt-3'>
+        <button class='btn btn-primary' id='generate'>Generate Meta Tags</button>
+      </div>
+    </div>
+
+    <div class='mt-4'>
+      <label class='form-label'>Generated Meta Tags</label>
+      <textarea class='form-control' id='output' rows='10' readonly></textarea>
+    </div>
+  </div>
+
+  <script src='https://code.jquery.com/jquery-3.6.4.min.js'></script>
+  <script>
+    $('#fetchMeta').on('click', function () {
+      const url = $('#urlInput').val().trim();
+      if (!url.startsWith('http')) {
+        alert('Please enter a valid URL including http or https.');
+        return;
+      }
+
+      $('#fetchMeta').text('Fetching...');
+
+      $.get('https://api.allorigins.win/raw?url=' + encodeURIComponent(url))
+        .done(function (data) {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(data, 'text/html');
+
+          const titleText = doc.querySelector('title')?.innerText || '';
+          const desc = doc.querySelector('meta[name=description]')?.getAttribute('content') || '';
+          const keywords = doc.querySelector('meta[name=keywords]')?.getAttribute('content') || '';
+          const author = doc.querySelector('meta[name=author]')?.getAttribute('content') || '';
+          const robots = doc.querySelector('meta[name=robots]')?.getAttribute('content') || '';
+          const viewport = doc.querySelector('meta[name=viewport]')?.getAttribute('content') || '';
+
+          $('#title').val(titleText);
+          $('#description').val(desc);
+          $('#keywords').val(keywords);
+          $('#author').val(author);
+          $('#robots').val(robots);
+          $('#viewport').val(viewport);
+
+          $('#fetchMeta').text('Fetch and Fill Meta Info');
+        })
+        .fail(function () {
+          alert('Failed to load page. Please check the URL.');
+          $('#fetchMeta').text('Fetch and Fill Meta Info');
+        });
+    });
+
+    $('#generate').on('click', function () {
+      const title = $('#title').val().trim();
+      const desc = $('#description').val().trim();
+      const keywords = $('#keywords').val().trim();
+      const author = $('#author').val().trim();
+      const robots = $('#robots').val().trim();
+      const viewport = $('#viewport').val().trim();
+
+      let metaTags = '';
+
+      if (title) metaTags += `<title>${title}</title>\n`;
+      if (desc) metaTags += `<meta name='description' content='${desc}'>\n`;
+      if (keywords) metaTags += `<meta name='keywords' content='${keywords}'>\n`;
+      if (author) metaTags += `<meta name='author' content='${author}'>\n`;
+      if (robots) metaTags += `<meta name='robots' content='${robots}'>\n`;
+      if (viewport) metaTags += `<meta name='viewport' content='${viewport}'>\n`;
+
+      $('#output').val(metaTags);
+    });
+  </script>
+
+</body>
+</html>
