@@ -107,24 +107,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Form Scanner</title>
+    <title>MW Form Scanner – Form Inventory & Action Audit</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Scan sitemap URLs to catalog forms, capture endpoints, and verify submission methods with the BREN7 MW Form Scanner.">
+  <meta name="keywords" content="form scanner, form inventory tool, submission endpoint audit, sitemap form analysis, Morweb form checker">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="MW Form Scanner – Form Inventory & Action Audit">
+  <meta property="og:description" content="Discover forms, actions, and submission types across your sitemap with the MW Form Scanner from BREN7.">
+  <meta property="og:url" content="https://bren7.com/apps/sitemap-form-scanner.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="MW Form Scanner – Form Inventory & Action Audit">
+  <meta name="twitter:description" content="Catalog forms and submission endpoints across pages with BREN7's MW Form Scanner.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

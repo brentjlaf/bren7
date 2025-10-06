@@ -960,24 +960,24 @@ if (!empty($scanResults)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comprehensive Accessibility Scanner</title>
+    <title>Comprehensive Accessibility Scanner – WCAG Audit Suite</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Conduct deep accessibility audits, track WCAG violations, and export compliance reports with the BREN7 Comprehensive Accessibility Scanner.">
+  <meta name="keywords" content="accessibility audit suite, wcag compliance tool, accessibility dashboard, violation tracker, Morweb accessibility">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="Comprehensive Accessibility Scanner – WCAG Audit Suite">
+  <meta property="og:description" content="Monitor WCAG issues, severity levels, and remediation progress with the BREN7 Accessibility Audit Suite.">
+  <meta property="og:url" content="https://bren7.com/apps/accessibility-audit-suite.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="Comprehensive Accessibility Scanner – WCAG Audit Suite">
+  <meta name="twitter:description" content="Run full accessibility audits and export reports with the BREN7 Accessibility Suite.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

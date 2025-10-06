@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flexbox CSS Generator</title>
+  <title>Flexbox CSS Generator – Advanced Layout Builder</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Control complex Flexbox properties, visualize item behavior, and export CSS using the advanced generator from BREN7.">
+  <meta name="keywords" content="advanced flexbox generator, css layout playground, flex properties editor, responsive flexbox tool, layout visualizer">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="Flexbox CSS Generator – Advanced Layout Builder">
+  <meta property="og:description" content="Simulate flex containers, tweak advanced options, and copy CSS instantly with BREN7's Flexbox generator.">
+  <meta property="og:url" content="https://bren7.com/apps/flexbox-generator-advanced.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="Flexbox CSS Generator – Advanced Layout Builder">
+  <meta name="twitter:description" content="Preview advanced Flexbox behaviors and export CSS with BREN7's generator.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

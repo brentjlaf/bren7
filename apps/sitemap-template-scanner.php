@@ -99,24 +99,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Template Scanner</title>
+    <title>MW Template Scanner – Layout Consistency Checker</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Identify page templates, component usage, and CMS layouts across sitemap URLs using the BREN7 MW Template Scanner.">
+  <meta name="keywords" content="template scanner, layout detection tool, cms template audit, sitemap layout analysis, Morweb template scanner">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="MW Template Scanner – Layout Consistency Checker">
+  <meta property="og:description" content="Map templates and shared components across your sitemap with the MW Template Scanner from BREN7.">
+  <meta property="og:url" content="https://bren7.com/apps/sitemap-template-scanner.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="MW Template Scanner – Layout Consistency Checker">
+  <meta name="twitter:description" content="Discover template usage across sitemap URLs with BREN7's MW Template Scanner.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

@@ -292,24 +292,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Image Scanner</title>
+    <title>MW Image Scanner – Lazy Loading Audit</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Evaluate sitemap images, detect duplicates, and verify lazy loading attributes with the BREN7 MW Image Scanner (Lazy Load Edition).">
+  <meta name="keywords" content="image lazy loading audit, sitemap media scanner, lazyload checker, image performance review, Morweb image tool">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="MW Image Scanner – Lazy Loading Audit">
+  <meta property="og:description" content="Scan sitemap images to track lazy loading adoption and media coverage with the BREN7 MW Image Scanner.">
+  <meta property="og:url" content="https://bren7.com/apps/sitemap-image-scanner-lazyload.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="MW Image Scanner – Lazy Loading Audit">
+  <meta name="twitter:description" content="Check lazy loading usage across sitemap images with BREN7's MW Image Scanner.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

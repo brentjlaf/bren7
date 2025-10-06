@@ -383,24 +383,24 @@ if (!empty($scanResults)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessibility Scanner</title>
+    <title>Accessibility Quick Scan – WCAG Issue Finder</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Run rapid accessibility checks across sitemap URLs and prioritize WCAG issues with the BREN7 Accessibility Quick Scan tool.">
+  <meta name="keywords" content="accessibility scanner, wcag audit, quick compliance check, web accessibility report, Morweb accessibility">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="Accessibility Quick Scan – WCAG Issue Finder">
+  <meta property="og:description" content="Surface WCAG violations, compliance levels, and critical accessibility issues using BREN7's quick scan dashboard.">
+  <meta property="og:url" content="https://bren7.com/apps/accessibility-quick-scan.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="Accessibility Quick Scan – WCAG Issue Finder">
+  <meta name="twitter:description" content="Quickly assess WCAG issues across pages with the BREN7 Accessibility Quick Scan tool.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

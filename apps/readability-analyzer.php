@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Readability Analyzer</title>
+  <title>Readability Analyzer – Text Clarity Insights</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Evaluate readability scores, sentence complexity, and content clarity with the BREN7 Readability Analyzer for writers and content teams.">
+  <meta name="keywords" content="readability analyzer, text clarity tool, Flesch reading ease, content analysis, writing assistant">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="Readability Analyzer – Text Clarity Insights">
+  <meta property="og:description" content="Measure Flesch scores, grade levels, and keyword density to optimize your copy with the BREN7 Readability Analyzer.">
+  <meta property="og:url" content="https://bren7.com/apps/readability-analyzer.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="Readability Analyzer – Text Clarity Insights">
+  <meta name="twitter:description" content="Analyze readability scores and simplify copy with the interactive BREN7 Readability Analyzer.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zen Bubbles</title>
+  <title>Zen Bubbles – Relaxing Bubble Pop Game</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Unwind with Zen Bubbles, a calming browser game where you pop glowing bubbles beneath a starry sky.">
+  <meta name="keywords" content="Zen Bubbles, relaxing browser game, bubble pop game, stress relief game, calming web game">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="Zen Bubbles – Relaxing Bubble Pop Game">
+  <meta property="og:description" content="Float away stress by popping luminous bubbles in this soothing browser experience from BREN7.">
+  <meta property="og:url" content="https://bren7.com/apps/zen-bubbles.php">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
+  <meta property="og:image" content="https://bren7.com/images/zen-bubbles-share.png">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
-  <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zen Bubbles – Relaxing Bubble Pop Game">
+  <meta name="twitter:description" content="Pop pastel bubbles and relax under the stars with Zen Bubbles by BREN7.">
+  <meta name="twitter:image" content="https://bren7.com/images/zen-bubbles-share.png">
 
   <!-- Favicon -->
   <link rel="icon" href="https://bren7.com/images/favicon.jpg" type="image/jpeg">
@@ -35,24 +35,6 @@
     gtag('config', 'G-1RGGXKCNB6');
   </script>
 
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Zen Bubbles is a relaxing browser game where you pop floating pastel bubbles under a starry sky. Soothing, simple, and satisfying.">
-  <meta name="keywords" content="Zen Bubbles, relaxing game, bubble pop, calming game, stress relief, simple game, casual browser game">
-  <meta name="author" content="Brent Jlaf">
-
-  <!-- Open Graph Meta Tags (for social sharing) -->
-  <meta property="og:title" content="Zen Bubbles - A Relaxing Bubble Pop Game">
-  <meta property="og:description" content="Unwind with Zen Bubbles — a peaceful game where you pop glowing bubbles beneath a twinkling night sky.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://bren7.com/ZenBubbles/"> <!-- Adjust if hosted elsewhere -->
-  <meta property="og:image" content="https://bren7.com/placeholder.jpg"> <!-- Optional: add a branded placeholder or bubble-themed image -->
-
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Zen Bubbles - A Relaxing Bubble Pop Game">
-  <meta name="twitter:description" content="Unwind and pop some pastel bubbles under the stars. Chill browser game to clear your mind.">
-  <meta name="twitter:image" content="https://bren7.com/placeholder.jpg"> <!-- Optional: same as OG image -->
 
   <!-- Favicon (optional) -->
   <link rel="icon" href="https://bren7.com/favicon.ico" type="image/x-icon" />

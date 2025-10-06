@@ -16,24 +16,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Advanced CSV Filtering Tool (Full-Width Expand)</title>
+  <title>Advanced CSV Filtering Tool – Multi-Condition Analyzer</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Upload spreadsheets, build complex filters, and export curated datasets with the BREN7 Advanced CSV Filtering Tool.">
+  <meta name="keywords" content="csv filter tool, spreadsheet analyzer, data filtering web app, csv export, data cleanup">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="Advanced CSV Filtering Tool – Multi-Condition Analyzer">
+  <meta property="og:description" content="Create layered filters, highlight matches, and download refined CSV outputs with this advanced data tool from BREN7.">
+  <meta property="og:url" content="https://bren7.com/apps/advanced-csv-filter.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="Advanced CSV Filtering Tool – Multi-Condition Analyzer">
+  <meta name="twitter:description" content="Filter and export CSV data with precision using the BREN7 Advanced CSV tool.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

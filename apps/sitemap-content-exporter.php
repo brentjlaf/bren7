@@ -169,24 +169,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitemap Content Exporter</title>
+    <title>Sitemap Content Exporter – Bulk Page Copy Downloader</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Download page content, metadata, and headings from sitemap URLs into shareable reports using the BREN7 Sitemap Content Exporter.">
+  <meta name="keywords" content="sitemap content exporter, bulk copy download, page text extractor, seo content audit, Morweb exporter">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="Sitemap Content Exporter – Bulk Page Copy Downloader">
+  <meta property="og:description" content="Capture on-page copy, metadata, and heading structure from sitemap URLs with this exporter by BREN7.">
+  <meta property="og:url" content="https://bren7.com/apps/sitemap-content-exporter.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="Sitemap Content Exporter – Bulk Page Copy Downloader">
+  <meta name="twitter:description" content="Export on-page copy for every sitemap URL with BREN7's content exporter.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->

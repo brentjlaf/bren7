@@ -216,24 +216,24 @@ if (!empty($_GET['export']) && $_GET['export'] == '1' && !empty($all_results)) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>SEO Sitemap Audit</title>
+  <title>SEO Sitemap Audit – Responsive Dashboard</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore web tools, generators, and utilities from BREN7 to enhance your digital projects.">
-  <meta name="keywords" content="BREN7, web tools, generators, accessibility, SEO, performance, utilities">
+  <meta name="description" content="Review sitemap URLs on any device with responsive tables that highlight metadata, headings, and performance issues in the BREN7 SEO Sitemap Audit tool.">
+  <meta name="keywords" content="responsive seo audit, sitemap checker, metadata compliance, mobile seo monitoring, Morweb tools">
   <meta name="author" content="Brent">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta property="og:description" content="Browse a collection of creative web tools, games, and utilities built by BREN7.">
-  <meta property="og:url" content="https://bren7.com/">
+  <meta property="og:title" content="SEO Sitemap Audit – Responsive Dashboard">
+  <meta property="og:description" content="Monitor SEO signals across sitemap URLs with a mobile-friendly dashboard from BREN7.">
+  <meta property="og:url" content="https://bren7.com/apps/sitemap-seo-audit-responsive.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BREN7 – Web Projects, Tools & Experiments">
-  <meta name="twitter:description" content="Interactive tools and experiments by BREN7. Explore beat makers, checkers, and more.">
+  <meta name="twitter:title" content="SEO Sitemap Audit – Responsive Dashboard">
+  <meta name="twitter:description" content="Track SEO checks across devices with the responsive sitemap audit from BREN7.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
   <!-- Favicon -->
