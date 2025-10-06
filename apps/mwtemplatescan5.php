@@ -151,7 +151,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     --dark-gray: #374151;
     --neutral-gray: #6B7280;
 
-    /* Morweb nav overrides */
+    /* Navigation overrides */
     --nav-header-bg: #2EB7A0;
     --nav-footer-bg: #DEDEDE;
     --nav-text-default: #333333;
@@ -538,7 +538,7 @@ tbody tr:nth-child(even) {
     <div class="container">
         <div class="header">
             <h1><i class="fas fa-code"></i> MW Template Scanner</h1>
-            <p class="subtitle">Analyze template usage across your Morweb site</p>
+            <p class="subtitle">Analyze template usage across your site</p>
         </div>
 
         <div class="card">
