@@ -47,13 +47,13 @@
 <div class="grid-background"></div>
 
 <div class="main-wrapper">
-  <header>
+  <header class="app-header">
     <div class="header-content">
       <div class="logo-wrapper">
         <div class="logo">BREN<span class="accent">7</span></div>
         <div class="logo-underline"></div>
       </div>
-      <p class="tagline">Web Experiments & Digital Innovation</p>
+      <p class="tagline">Web Tools &amp; Experiments</p>
     </div>
   </header>
 

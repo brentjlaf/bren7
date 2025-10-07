@@ -60,7 +60,7 @@ body {
 }
 
 /* Header Styles */
-header {
+.app-header {
   text-align: center;
   padding: 60px 20px 40px;
   border-bottom: 1px solid var(--color-border);
@@ -117,7 +117,7 @@ header {
   min-height: 100vh;
 }
 
-.projects-page header {
+.projects-page .projects-header {
   padding-bottom: 20px;
 }
 
