@@ -52,10 +52,22 @@
       background-color: #f4f4f4;
       margin: 0;
       padding: 0;
+    }
+    .app-wrapper {
+      align-items: stretch;
+    }
+    .app-main {
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
+      padding: 40px 0 60px;
+    }
+    .app-content {
+      width: 100%;
+      max-width: 1800px;
+      background: transparent;
+      box-shadow: none;
+      border: none;
+      padding: 0;
     }
     #widget-container {
       background-color: white;
@@ -63,9 +75,9 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       width: 100%;
-      max-width: 1500px;
+      max-width: 1700px;
       display: flex;
-      height: 85vh;
+      gap: 20px;
     }
     /* Sidebar Styles */
     #sidebar {
