@@ -45,13 +45,13 @@
 <body class="projects-page">
 <div class="grid-background"></div>
 <div class="main-wrapper">
-  <header class="projects-header">
+  <header class="app-header projects-header">
     <div class="header-content">
       <div class="logo-wrapper">
         <div class="logo">BREN<span class="accent">7</span></div>
         <div class="logo-underline"></div>
       </div>
-      <p class="tagline">Web Experiments & Digital Innovation</p>
+      <p class="tagline">Web Tools &amp; Experiments</p>
       <nav class="primary-nav" aria-label="Primary">
         <a href="/" class="nav-link"><i class="fas fa-home"></i> Home</a>
       </nav>
