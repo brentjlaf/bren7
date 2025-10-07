@@ -210,11 +210,10 @@ body {
 .header {
     text-align: center;
     margin-bottom: 3rem;
-    background: var(--white);
     padding: 2.5rem;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid var(--medium-gray);
+    border: 1px solid var(--dark-gray);
 }
 .header h1 {
     font-size: 2.5rem;
