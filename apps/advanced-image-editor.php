@@ -787,5 +787,6 @@
   </div>
   <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 
+  <script src="/js/app-shell.js" defer></script>
 </body>
 </html>
