@@ -64,6 +64,7 @@ body {
   text-align: center;
   padding: 60px 20px 40px;
   border-bottom: 1px solid var(--color-border);
+  background: none;
 }
 
 .header-content {
