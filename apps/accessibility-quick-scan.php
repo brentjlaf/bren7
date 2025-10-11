@@ -436,7 +436,7 @@ if (!empty($scanResults)) {
         }
         
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4f46e5 0%, #5b21b6 100%);
             color: white;
             padding: 3rem 2rem;
             border-radius: 1rem;
@@ -464,8 +464,8 @@ if (!empty($scanResults)) {
         .btn {
             display: inline-block;
             padding: 0.75rem 1.5rem;
-            background: white;
-            color: #667eea;
+            background: #4f46e5;
+            color: #ffffff;
             text-decoration: none;
             border-radius: 0.5rem;
             font-weight: 600;
@@ -473,16 +473,33 @@ if (!empty($scanResults)) {
             border: none;
             cursor: pointer;
             font-size: 1rem;
+            box-shadow: 0 5px 15px rgba(79,70,229,0.25);
         }
-        
-        .btn:hover {
+
+        .btn:hover,
+        .btn:focus {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 20px rgba(79,70,229,0.35);
+            background: #4338ca;
+            color: #ffffff;
         }
-        
+
+        .btn:focus {
+            outline: 3px solid rgba(255,255,255,0.6);
+            outline-offset: 2px;
+        }
+
         .btn-secondary {
-            background: rgba(255,255,255,0.2);
-            color: white;
+            background: rgba(15,23,42,0.35);
+            color: #f8fafc;
+            border: 2px solid rgba(248,250,252,0.55);
+        }
+
+        .btn-secondary:hover,
+        .btn-secondary:focus {
+            background: rgba(15,23,42,0.55);
+            border-color: rgba(248,250,252,0.75);
+            color: #ffffff;
         }
         
         .stats {
@@ -502,7 +519,7 @@ if (!empty($scanResults)) {
         .stat-value {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #667eea;
+            color: #4338ca;
             margin-bottom: 0.25rem;
         }
         
@@ -649,12 +666,14 @@ if (!empty($scanResults)) {
         }
         
         .url-cell a {
-            color: #667eea;
+            color: #4338ca;
             text-decoration: none;
+            font-weight: 600;
         }
-        
+
         .url-cell a:hover {
             text-decoration: underline;
+            color: #312e81;
         }
         
         @media (max-width: 768px) {
