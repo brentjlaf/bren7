@@ -7,6 +7,13 @@ body.app-page {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+  --surface-primary: #0d1424;
+  --surface-secondary: #111b2d;
+  --surface-tertiary: rgba(20, 30, 48, 0.92);
+  --surface-soft: rgba(27, 39, 60, 0.65);
+  --surface-border: rgba(148, 163, 184, 0.25);
+  --surface-highlight: rgba(92, 204, 244, 0.12);
+  --white: #e6f0ff;
 }
 
 body.app-page a {
@@ -50,8 +57,8 @@ body.app-page .app-header {
 .app-content {
   width: 100%;
   max-width: min(1400px, 95vw);
-  background: rgba(0, 0, 0, 0.55);
-  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.12));
+  background: var(--surface-tertiary, rgba(0, 0, 0, 0.55));
+  border: 1px solid var(--surface-border, rgba(255, 255, 255, 0.12));
   border-radius: 24px;
   padding: 48px 40px;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
@@ -113,8 +120,8 @@ body.app-page button,
 body.app-page input,
 body.app-page select,
 body.app-page textarea {
-  background: rgba(10, 10, 10, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--surface-soft, rgba(10, 10, 10, 0.8));
+  border: 1px solid var(--surface-border, rgba(255, 255, 255, 0.1));
   color: rgba(255, 255, 255, 0.92);
   padding: 12px 16px;
   border-radius: 12px;
@@ -140,7 +147,7 @@ body.app-page button.btn-primary,
 body.app-page button.btn-secondary,
 body.app-page a.btn {
   background: linear-gradient(135deg, var(--color-accent, #5cccf4), #2d9ac0);
-  color: #000;
+  color: #0d1424;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -173,8 +180,8 @@ body.app-page a.btn.disabled {
 body.app-page table {
   width: 100%;
   border-collapse: collapse;
-  background: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--surface-secondary, rgba(0, 0, 0, 0.4));
+  border: 1px solid var(--surface-border, rgba(255, 255, 255, 0.08));
   border-radius: 16px;
   overflow: hidden;
 }
@@ -222,8 +229,8 @@ body.app-page .form-card,
 body.app-page .tab-content,
 body.app-page .accordion-item,
 body.app-page .accordion-body {
-  background: rgba(10, 10, 10, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--surface-secondary, rgba(10, 10, 10, 0.72));
+  border: 1px solid var(--surface-border, rgba(255, 255, 255, 0.12));
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
@@ -311,6 +318,64 @@ body.app-page .form-text,
 body.app-page .text-secondary,
 body.app-page .text-body-secondary {
   color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* Force remaining light surfaces to respect the dark theme */
+body.app-page [style*="background: white"],
+body.app-page [style*="background:#fff"],
+body.app-page [style*="background: #fff"],
+body.app-page [style*="background:#ffffff"],
+body.app-page [style*="background: #ffffff"],
+body.app-page [style*="background-color: white"],
+body.app-page [style*="background-color:#fff"],
+body.app-page [style*="background-color: #fff"],
+body.app-page [style*="background-color:#ffffff"],
+body.app-page [style*="background-color: #ffffff"],
+body.app-page [style*="background: var(--white)"] {
+  background: var(--surface-secondary, #111b2d) !important;
+  background-color: var(--surface-secondary, #111b2d) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+body.app-page [style*="color: #333"],
+body.app-page [style*="color:#333"],
+body.app-page [style*="color: #374151"],
+body.app-page [style*="color:#374151"],
+body.app-page [style*="color: #555"],
+body.app-page [style*="color:#555"],
+body.app-page [style*="color: white"],
+body.app-page [style*="color:white"],
+body.app-page [style*="color: #ffffff"],
+body.app-page [style*="color:#ffffff"] {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+body.app-page .container,
+body.app-page .main-content,
+body.app-page .scan-form,
+body.app-page .results-section,
+body.app-page .results-container,
+body.app-page .analysis-container,
+body.app-page .analysis-card,
+body.app-page .summary,
+body.app-page .summary-card,
+body.app-page .control-panel,
+body.app-page .toolbox,
+body.app-page .settings-panel,
+body.app-page .output-panel,
+body.app-page .panel-container,
+body.app-page .data-panel,
+body.app-page .insights-panel {
+  background: var(--surface-secondary, #111b2d);
+  border-color: var(--surface-border, rgba(148, 163, 184, 0.25));
+  color: rgba(255, 255, 255, 0.92);
+}
+
+body.app-page .header,
+body.app-page .hero,
+body.app-page .section-header {
+  background: linear-gradient(135deg, rgba(92, 204, 244, 0.25), rgba(45, 154, 192, 0.2));
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .app-footer {

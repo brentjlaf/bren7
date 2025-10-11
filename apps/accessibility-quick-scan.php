@@ -424,8 +424,8 @@ if (!empty($scanResults)) {
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #f5f5f5;
-            color: #333;
+            background: radial-gradient(circle at top left, rgba(31, 64, 104, 0.65), rgba(7, 12, 24, 0.95));
+            color: rgba(255, 255, 255, 0.9);
             line-height: 1.6;
         }
         
@@ -436,12 +436,13 @@ if (!empty($scanResults)) {
         }
         
         header {
-            background: linear-gradient(135deg, #4f46e5 0%, #5b21b6 100%);
-            color: white;
+            background: linear-gradient(135deg, rgba(79,70,229,0.45) 0%, rgba(91,33,182,0.35) 100%);
+            color: rgba(255, 255, 255, 0.95);
             padding: 3rem 2rem;
-            border-radius: 1rem;
+            border-radius: 1.5rem;
             margin-bottom: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+            border: 1px solid rgba(148, 163, 184, 0.25);
         }
         
         h1 {
@@ -464,8 +465,8 @@ if (!empty($scanResults)) {
         .btn {
             display: inline-block;
             padding: 0.75rem 1.5rem;
-            background: #4f46e5;
-            color: #ffffff;
+            background: linear-gradient(135deg, #5cccf4, #2d9ac0);
+            color: #0d1424;
             text-decoration: none;
             border-radius: 0.5rem;
             font-weight: 600;
@@ -473,7 +474,7 @@ if (!empty($scanResults)) {
             border: none;
             cursor: pointer;
             font-size: 1rem;
-            box-shadow: 0 5px 15px rgba(79,70,229,0.25);
+            box-shadow: 0 15px 30px rgba(92,204,244,0.25);
         }
 
         .btn:hover,
@@ -510,34 +511,36 @@ if (!empty($scanResults)) {
         }
         
         .stat-card {
-            background: white;
+            background: rgba(17, 27, 45, 0.9);
             padding: 1.5rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-radius: 1rem;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+            border: 1px solid rgba(92,204,244,0.2);
         }
         
         .stat-value {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #4338ca;
+            color: #8ab4ff;
             margin-bottom: 0.25rem;
         }
         
         .stat-label {
-            color: #666;
+            color: rgba(255,255,255,0.65);
             font-size: 0.9rem;
         }
         
         .results {
-            background: white;
-            border-radius: 0.75rem;
+            background: rgba(17, 27, 45, 0.88);
+            border-radius: 1.25rem;
             padding: 2rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+            border: 1px solid rgba(148,163,184,0.25);
         }
         
         .results h2 {
             margin-bottom: 1.5rem;
-            color: #333;
+            color: rgba(255,255,255,0.92);
         }
         
         .table-container {
@@ -550,22 +553,22 @@ if (!empty($scanResults)) {
         }
         
         th {
-            background: #f8f9fa;
+            background: rgba(28, 40, 64, 0.85);
             padding: 1rem;
             text-align: left;
             font-weight: 600;
-            color: #555;
-            border-bottom: 2px solid #e0e0e0;
+            color: rgba(255,255,255,0.82);
+            border-bottom: 2px solid rgba(148,163,184,0.25);
             white-space: nowrap;
         }
         
         td {
             padding: 1rem;
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 1px solid rgba(148,163,184,0.2);
         }
         
         tr:hover {
-            background: #f8f9fa;
+            background: rgba(92, 204, 244, 0.12);
         }
         
         .score {
@@ -577,18 +580,18 @@ if (!empty($scanResults)) {
         }
         
         .score-aaa, .score-aa {
-            background: #d1fae5;
-            color: #065f46;
+            background: rgba(16, 185, 129, 0.2);
+            color: #34d399;
         }
         
         .score-partial {
-            background: #fef3c7;
-            color: #92400e;
+            background: rgba(251, 191, 36, 0.25);
+            color: #facc15;
         }
         
         .score-failing {
-            background: #fee2e2;
-            color: #991b1b;
+            background: rgba(248, 113, 113, 0.25);
+            color: #f87171;
         }
         
         .badge {
@@ -601,28 +604,28 @@ if (!empty($scanResults)) {
         }
         
         .badge-critical {
-            background: #fee2e2;
-            color: #991b1b;
+            background: rgba(248, 113, 113, 0.22);
+            color: #fca5a5;
         }
         
         .badge-serious {
-            background: #fed7aa;
-            color: #9a3412;
+            background: rgba(249, 115, 22, 0.22);
+            color: #fb923c;
         }
         
         .badge-moderate {
-            background: #fef3c7;
-            color: #92400e;
+            background: rgba(234, 179, 8, 0.22);
+            color: #facc15;
         }
         
         .badge-minor {
-            background: #dbeafe;
-            color: #1e40af;
+            background: rgba(96, 165, 250, 0.22);
+            color: #93c5fd;
         }
         
         .issues-list {
             font-size: 0.875rem;
-            color: #666;
+            color: rgba(255,255,255,0.7);
             max-width: 400px;
         }
         
@@ -631,11 +634,12 @@ if (!empty($scanResults)) {
         }
         
         .error {
-            background: #fee2e2;
-            color: #991b1b;
+            background: rgba(56, 6, 16, 0.75);
+            color: #fca5a5;
             padding: 1.5rem;
-            border-radius: 0.5rem;
+            border-radius: 1rem;
             margin-bottom: 2rem;
+            border: 1px solid rgba(252, 165, 165, 0.35);
         }
         
         .loading {
@@ -644,8 +648,8 @@ if (!empty($scanResults)) {
         }
         
         .spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #667eea;
+            border: 4px solid rgba(255,255,255,0.15);
+            border-top: 4px solid #5cccf4;
             border-radius: 50%;
             width: 50px;
             height: 50px;
@@ -666,14 +670,14 @@ if (!empty($scanResults)) {
         }
         
         .url-cell a {
-            color: #4338ca;
+            color: #8ab4ff;
             text-decoration: none;
             font-weight: 600;
         }
 
         .url-cell a:hover {
             text-decoration: underline;
-            color: #312e81;
+            color: #c4d9ff;
         }
         
         @media (max-width: 768px) {
@@ -727,14 +731,14 @@ if (!empty($scanResults)) {
             <form method="POST" action="" style="margin-top: 1.5rem;">
                 <div style="display: flex; gap: 1rem; align-items: flex-end; flex-wrap: wrap;">
                     <div style="flex: 1; min-width: 300px;">
-                        <label for="sitemap_url" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Sitemap URL:</label>
-                        <input 
-                            type="url" 
-                            id="sitemap_url" 
-                            name="sitemap_url" 
+                        <label for="sitemap_url" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: rgba(255,255,255,0.75);">Sitemap URL:</label>
+                        <input
+                            type="url"
+                            id="sitemap_url"
+                            name="sitemap_url"
                             value="<?php echo htmlspecialchars($sitemapUrl); ?>"
                             placeholder="https://example.com/sitemap.xml"
-                            style="width: 100%; padding: 0.75rem; border: 2px solid rgba(255,255,255,0.3); border-radius: 0.5rem; background: rgba(255,255,255,0.9); font-size: 1rem;"
+                            style="width: 100%; padding: 0.75rem; border: 2px solid rgba(92,204,244,0.35); border-radius: 0.5rem; background: rgba(17,27,45,0.85); color: rgba(255,255,255,0.92); font-size: 1rem;"
                             required
                         >
                     </div>

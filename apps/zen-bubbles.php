@@ -68,7 +68,7 @@
     /* Styling for individual stars */
     .star {
       position: absolute;
-      background: white;
+      background: #e8f6ff;
       border-radius: 50%;
       opacity: 0.5;
       animation: twinkle linear infinite;

@@ -111,8 +111,9 @@
     .toggle.active { background-color: #ff6b35; }
     .toggle-slider {
       position: absolute; top: 2px; left: 2px;
-      width: 21px; height: 21px; background: white;
+      width: 21px; height: 21px; background: #e8f6ff;
       border-radius: 50%; transition: transform 0.3s;
+      border: 1px solid rgba(92, 204, 244, 0.35);
     }
     .toggle.active .toggle-slider {
       transform: translateX(25px);

@@ -153,9 +153,10 @@
       left: 2px;
       width: 21px;
       height: 21px;
-      background-color: white;
+      background-color: #e8f6ff;
       border-radius: 50%;
       transition: transform 0.3s;
+      border: 1px solid rgba(92, 204, 244, 0.35);
     }
     .toggle.active .toggle-slider {
       transform: translateX(25px);

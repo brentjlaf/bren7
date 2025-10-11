@@ -396,7 +396,7 @@ function getRiskLevel($filename) {
     --success-green: #22C55E;
 
     /* Neutrals */
-    --white: #FFFFFF;
+    --white: #e6f0ff;
     --light-gray: #F8FAFC;
     --medium-gray: #E2E8F0;
     --dark-gray: #374151;

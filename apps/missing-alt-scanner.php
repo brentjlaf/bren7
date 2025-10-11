@@ -367,15 +367,16 @@ class AltTagScanner {
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            background: rgba(15, 22, 38, 0.92);
+            border-radius: 24px;
+            box-shadow: 0 40px 70px rgba(0, 0, 0, 0.45);
             overflow: hidden;
+            border: 1px solid rgba(148, 163, 184, 0.25);
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.45) 0%, rgba(118, 75, 162, 0.35) 100%);
+            color: rgba(255, 255, 255, 0.95);
             padding: 2rem;
             text-align: center;
         }
@@ -396,10 +397,11 @@ class AltTagScanner {
         }
 
         .scan-form {
-            background: #f8fafc;
+            background: rgba(17, 27, 45, 0.9);
             padding: 2rem;
-            border-radius: 12px;
+            border-radius: 18px;
             margin-bottom: 2rem;
+            border: 1px solid rgba(148, 163, 184, 0.25);
         }
 
         .form-group {
@@ -410,22 +412,24 @@ class AltTagScanner {
             display: block;
             font-weight: 600;
             margin-bottom: 0.5rem;
-            color: #374151;
+            color: rgba(255, 255, 255, 0.85);
         }
 
         .form-group input {
             width: 100%;
             padding: 0.75rem;
-            border: 2px solid #e5e7eb;
-            border-radius: 8px;
+            border: 2px solid rgba(92, 204, 244, 0.25);
+            border-radius: 12px;
             font-size: 1rem;
-            transition: border-color 0.3s ease;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            background: rgba(27, 39, 60, 0.75);
+            color: rgba(255, 255, 255, 0.92);
         }
 
         .form-group input:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            border-color: rgba(102, 126, 234, 0.75);
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.25);
         }
 
         .btn {
@@ -458,8 +462,8 @@ class AltTagScanner {
         .progress-bar {
             width: 100%;
             height: 8px;
-            background: #e5e7eb;
-            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 999px;
             overflow: hidden;
         }
 
@@ -473,7 +477,7 @@ class AltTagScanner {
         .progress-text {
             text-align: center;
             margin-top: 0.5rem;
-            color: #6b7280;
+            color: rgba(255, 255, 255, 0.6);
         }
 
         .results {
@@ -488,16 +492,17 @@ class AltTagScanner {
         }
 
         .stat-card {
-            background: white;
-            border: 2px solid #e5e7eb;
-            border-radius: 12px;
+            background: rgba(17, 27, 45, 0.92);
+            border: 1px solid rgba(92, 204, 244, 0.2);
+            border-radius: 18px;
             padding: 1.5rem;
             text-align: center;
-            transition: border-color 0.3s ease;
+            transition: border-color 0.3s ease, transform 0.3s ease;
         }
 
         .stat-card:hover {
-            border-color: #667eea;
+            border-color: rgba(102, 126, 234, 0.85);
+            transform: translateY(-4px);
         }
 
         .stat-number {
@@ -511,14 +516,14 @@ class AltTagScanner {
         .stat-number.primary { color: #667eea; }
 
         .stat-label {
-            color: #6b7280;
+            color: rgba(255, 255, 255, 0.65);
             font-weight: 500;
         }
 
         .issues-section {
-            background: #fef2f2;
-            border: 2px solid #fecaca;
-            border-radius: 12px;
+            background: rgba(56, 0, 12, 0.55);
+            border: 1px solid rgba(239, 68, 68, 0.35);
+            border-radius: 18px;
             padding: 1.5rem;
             margin-bottom: 2rem;
         }
@@ -541,19 +546,20 @@ class AltTagScanner {
 
         .page-title {
             font-weight: 600;
-            color: #374151;
+            color: rgba(255, 255, 255, 0.9);
             margin-bottom: 0.5rem;
             padding: 0.5rem;
-            background: white;
-            border-radius: 6px;
+            background: rgba(17, 27, 45, 0.85);
+            border-radius: 10px;
         }
 
         .issue-item {
-            background: white;
+            background: rgba(32, 8, 16, 0.85);
             border-left: 4px solid #ef4444;
             padding: 0.75rem;
             margin: 0.5rem 0;
-            border-radius: 0 6px 6px 0;
+            border-radius: 0 12px 12px 12px;
+            color: rgba(255, 255, 255, 0.82);
         }
 
         .issue-img {
@@ -566,23 +572,24 @@ class AltTagScanner {
 
         .issue-details {
             font-size: 0.9rem;
-            color: #6b7280;
+            color: rgba(255, 255, 255, 0.7);
         }
 
         .issue-src {
             font-family: monospace;
-            background: #f3f4f6;
-            padding: 0.25rem;
-            border-radius: 4px;
+            background: rgba(12, 18, 32, 0.9);
+            padding: 0.35rem 0.5rem;
+            border-radius: 8px;
             word-break: break-all;
+            color: rgba(255, 255, 255, 0.88);
         }
 
         .error-message {
-            background: #fee2e2;
-            border: 1px solid #fecaca;
-            color: #dc2626;
+            background: rgba(56, 6, 16, 0.75);
+            border: 1px solid rgba(252, 165, 165, 0.4);
+            color: #fca5a5;
             padding: 1rem;
-            border-radius: 8px;
+            border-radius: 12px;
             margin: 1rem 0;
             display: none;
         }

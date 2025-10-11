@@ -51,7 +51,7 @@
       --primary-light: #7c3aed;
 
       /* Defaults for page text/background */
-      --bg-color: #ffffff;
+      --bg-color: #eaf2ff;
       --text-color: #111827;
 
       --gray-900: #1f2937;
@@ -65,7 +65,7 @@
       --gray-100: #f9fafb;
       --gray-50: #f8fafc;
 
-      --white: #ffffff;
+      --white: #e6f0ff;
 
       /* Shadows and radii */
       --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1);
@@ -880,7 +880,7 @@
                   <div id="customColorOptions" class="color-input-group d-none">
                     <div>
                       <label class="form-label">Background</label>
-                      <input type="color" class="form-control form-control-color" id="themeBgColor" value="#ffffff">
+                      <input type="color" class="form-control form-control-color" id="themeBgColor" value="#e6f0ff">
                     </div>
                     <div>
                       <label class="form-label">Text Color</label>
@@ -1110,9 +1110,9 @@
         primary: '#5b21b6',
         primaryLight: '#7c3aed',
         primaryHover: '#4c1d95',
-        bg: '#ffffff',
+        bg: '#e6f0ff',
         text: '#000000',
-        preview: 'linear-gradient(to bottom, #ffffff, #f3f4f6)'
+        preview: 'linear-gradient(to bottom, #eaf2ff, #f3f4f6)'
       },
       {
         id: 'modern',
@@ -1160,7 +1160,7 @@
         primary: '#5b21b6',
         primaryLight: '#7c3aed',
         primaryHover: '#4c1d95',
-        bg: '#ffffff',
+        bg: '#e6f0ff',
         text: '#000000',
         preview: 'linear-gradient(to bottom, #e5e7eb, #9ca3af)'
       }
@@ -1583,7 +1583,7 @@
       let themeBg = selectedTheme.bg;
       let themeText = selectedTheme.text;
       if (currentTheme === 'custom') {
-        themeBg = document.getElementById('themeBgColor').value || '#ffffff';
+        themeBg = document.getElementById('themeBgColor').value || '#e6f0ff';
         themeText = document.getElementById('themeTextColor').value || '#000000';
       }
 
