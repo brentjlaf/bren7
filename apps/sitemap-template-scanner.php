@@ -99,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Template Scanner – Layout Consistency Checker</title>
+    <title>BREN7 Template Scanner – Layout Consistency Checker</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Identify page templates, component usage, and CMS layouts across sitemap URLs using the BREN7 MW Template Scanner.">
   <meta name="keywords" content="template scanner, layout detection tool, cms template audit, sitemap layout analysis, BREN7 template scanner">
@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="MW Template Scanner – Layout Consistency Checker">
+  <meta property="og:title" content="BREN7 Template Scanner – Layout Consistency Checker">
   <meta property="og:description" content="Map templates and shared components across your sitemap with the MW Template Scanner from BREN7.">
   <meta property="og:url" content="https://bren7.com/apps/sitemap-template-scanner.php">
   <meta property="og:type" content="website">
@@ -115,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="MW Template Scanner – Layout Consistency Checker">
+  <meta name="twitter:title" content="BREN7 Template Scanner – Layout Consistency Checker">
   <meta name="twitter:description" content="Discover template usage across sitemap URLs with BREN7's MW Template Scanner.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
@@ -555,7 +555,7 @@ tbody tr:nth-child(even) {
 
     <div class="container">
         <div class="header">
-            <h1><i class="fas fa-code"></i> MW Template Scanner</h1>
+            <h1><i class="fas fa-code"></i> BREN7 Template Scanner</h1>
             <p class="subtitle">Analyze template usage across your BREN7 site</p>
         </div>
 

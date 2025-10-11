@@ -345,7 +345,7 @@ function formatBytes($size, $precision = 2) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Performance Auditor – Extended Lighthouse Review</title>
+    <title>BREN7 Performance Auditor – Extended Lighthouse Review</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Aggregate Lighthouse metrics, Core Web Vitals, and page weights for every sitemap URL with the extended MW Performance Auditor.">
   <meta name="keywords" content="performance audit tool, lighthouse report aggregator, core web vitals scanner, sitemap performance, BREN7 auditor">
@@ -353,7 +353,7 @@ function formatBytes($size, $precision = 2) {
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="MW Performance Auditor – Extended Lighthouse Review">
+  <meta property="og:title" content="BREN7 Performance Auditor – Extended Lighthouse Review">
   <meta property="og:description" content="Review performance, accessibility, and SEO metrics for multiple URLs with BREN7's MW Performance Auditor.">
   <meta property="og:url" content="https://bren7.com/apps/sitemap-performance-audit-extended.php">
   <meta property="og:type" content="website">
@@ -361,7 +361,7 @@ function formatBytes($size, $precision = 2) {
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="MW Performance Auditor – Extended Lighthouse Review">
+  <meta name="twitter:title" content="BREN7 Performance Auditor – Extended Lighthouse Review">
   <meta name="twitter:description" content="Compare Lighthouse scores across sitemap URLs with the extended MW Performance Auditor.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
@@ -856,7 +856,7 @@ tbody tr:nth-child(even) {
 
     <div class="container">
         <div class="header">
-            <h1><i class="fas fa-tachometer-alt"></i> MW Performance Auditor</h1>
+            <h1><i class="fas fa-tachometer-alt"></i> BREN7 Performance Auditor</h1>
             <p class="subtitle">Analyze page speed, Core Web Vitals, and optimization opportunities across your sitemap</p>
         </div>
 

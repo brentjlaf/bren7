@@ -350,7 +350,7 @@ function getRiskLevel($filename) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Security Scanner – Sitemap Risk Review</title>
+    <title>BREN7 Security Scanner – Sitemap Risk Review</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Evaluate sitemap URLs for security signals, mixed content, and vulnerable assets with the BREN7 MW Security Scanner.">
   <meta name="keywords" content="security sitemap scanner, mixed content checker, vulnerability audit, website security review, BREN7 security tool">
@@ -358,7 +358,7 @@ function getRiskLevel($filename) {
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="MW Security Scanner – Sitemap Risk Review">
+  <meta property="og:title" content="BREN7 Security Scanner – Sitemap Risk Review">
   <meta property="og:description" content="Scan sitemap endpoints for SSL issues, redirects, and exposed files using the BREN7 MW Security Scanner.">
   <meta property="og:url" content="https://bren7.com/apps/sitemap-security-scanner.php">
   <meta property="og:type" content="website">
@@ -366,7 +366,7 @@ function getRiskLevel($filename) {
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="MW Security Scanner – Sitemap Risk Review">
+  <meta name="twitter:title" content="BREN7 Security Scanner – Sitemap Risk Review">
   <meta name="twitter:description" content="Audit sitemap URLs for security gaps with the MW Security Scanner by BREN7.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
@@ -879,7 +879,7 @@ tbody tr:nth-child(even) {
 
     <div class="container">
         <div class="header">
-            <h1><i class="fas fa-shield-alt"></i> MW Security Scanner</h1>
+            <h1><i class="fas fa-shield-alt"></i> BREN7 Security Scanner</h1>
             <p class="subtitle">Comprehensive security audit for HTTP headers, SSL configuration, exposed files, and common vulnerabilities</p>
         </div>
 
