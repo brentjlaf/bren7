@@ -32,6 +32,12 @@ body.app-page a:focus {
   padding: 48px 20px 32px;
   border-bottom: 1px solid var(--color-border, rgba(255, 255, 255, 0.1));
   text-align: center;
+  background: none;
+}
+
+body.app-page header.app-header,
+body.app-page .app-header {
+  background: none;
 }
 
 .app-main {
