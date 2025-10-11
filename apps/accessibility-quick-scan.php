@@ -436,7 +436,6 @@ if (!empty($scanResults)) {
         }
         
         header {
-            background: linear-gradient(135deg, rgba(79,70,229,0.45) 0%, rgba(91,33,182,0.35) 100%);
             color: rgba(255, 255, 255, 0.95);
             padding: 3rem 2rem;
             border-radius: 1.5rem;
