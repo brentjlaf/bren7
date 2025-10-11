@@ -53,7 +53,7 @@
 
   <style>
     body {
-      background-color: #f8f9fa; /* Light gray background */
+      background: linear-gradient(135deg, rgba(13, 20, 36, 0.95), rgba(23, 33, 52, 0.92));
       margin-top: 20px;
     }
     .card {
@@ -69,7 +69,7 @@
     .table-container table thead th {
       position: sticky;
       top: 0;
-      background: #ffffff;
+      background: var(--surface-secondary, rgba(255, 255, 255, 0.05));
       z-index: 10;
     }
     

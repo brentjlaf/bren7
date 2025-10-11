@@ -373,10 +373,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         width: 100%;
         border-collapse: collapse;
         margin-top: 24px;
-        background: white;
-        border-radius: 12px;
+        background: rgba(17, 27, 45, 0.9);
+        border-radius: 16px;
         overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(148, 163, 184, 0.25);
     }
 
     .results-table th,
@@ -397,7 +398,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     .results-table tr:hover {
-        background: #F7FAFC;
+        background: rgba(92, 204, 244, 0.12);
     }
 
     .results-table td {
@@ -414,8 +415,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     .table-container {
         max-height: 600px;
         overflow-y: auto;
-        border-radius: 12px;
-        border: 1px solid #E2E8F0;
+        border-radius: 16px;
+        border: 1px solid rgba(148, 163, 184, 0.25);
+        background: rgba(15, 22, 38, 0.85);
     }
 
     .actions {

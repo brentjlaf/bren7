@@ -49,7 +49,7 @@
     /* Global Styles */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background: radial-gradient(circle at top, rgba(19, 32, 52, 0.85), rgba(4, 8, 16, 0.95));
       margin: 0;
       padding: 0;
     }
@@ -70,27 +70,29 @@
       padding: 0;
     }
     #widget-container {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background: var(--surface-tertiary, rgba(13, 20, 36, 0.95));
+      padding: 24px;
+      border-radius: 18px;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+      border: 1px solid var(--surface-border, rgba(148, 163, 184, 0.25));
       width: 100%;
       max-width: 1700px;
       display: flex;
-      gap: 20px;
+      gap: 24px;
     }
     /* Sidebar Styles */
     #sidebar {
       min-width: 300px;
       max-width: 300px;
-      background-color: #f9f9f9;
+      background: var(--surface-secondary, #111b2d);
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 16px;
       margin-right: 20px;
       display: flex;
       flex-direction: column;
       overflow: hidden;
       max-height: 100%;
+      border: 1px solid var(--surface-border, rgba(148, 163, 184, 0.25));
     }
     /* Hide scrollbars in the settings area while still allowing scrolling */
     #settings {
@@ -104,7 +106,7 @@
     }
     h2 {
       font-size: 1.6rem;
-      color: #333;
+      color: var(--color-light-text, #f5f5f5);
       margin-bottom: 20px;
     }
     .control-group {
@@ -114,26 +116,32 @@
       width: 100%;
       padding: 10px;
       margin-top: 5px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      background-color: #fff;
+      border: 1px solid var(--surface-border, rgba(148, 163, 184, 0.25));
+      border-radius: 10px;
+      background: var(--surface-soft, rgba(27, 39, 60, 0.65));
       font-size: 1rem;
       transition: all 0.2s ease-in-out;
       box-sizing: border-box;
+      color: rgba(255, 255, 255, 0.92);
     }
     button {
-      background-color: #00a99d;
-      color: white;
+      background: linear-gradient(135deg, var(--color-accent, #5cccf4), #2d9ac0);
+      color: #0d1424;
       border: none;
       cursor: pointer;
       transition: all 0.2s;
+      font-weight: 600;
+      letter-spacing: 0.06em;
     }
     button:hover {
-      background-color: #45a049;
+      transform: translateY(-2px);
+      box-shadow: 0 18px 32px rgba(92, 204, 244, 0.35);
     }
     button:disabled {
-      background-color: #ccc;
+      background: var(--surface-soft, rgba(27, 39, 60, 0.65));
       cursor: not-allowed;
+      opacity: 0.6;
+      box-shadow: none;
     }
     #output img {
       margin-top: 20px;
@@ -142,11 +150,11 @@
     }
     #file-size, #download-dimensions {
       font-weight: bold;
-      color: #333;
+      color: rgba(255, 255, 255, 0.85);
     }
     #dimensions {
       margin: 10px 0;
-      color: #333;
+      color: rgba(255, 255, 255, 0.85);
       font-weight: bold;
     }
     #warning {
@@ -156,7 +164,7 @@
     }
     label {
       font-weight: bold;
-      color: #555;
+      color: rgba(255, 255, 255, 0.8);
     }
     /* Main Content Area */
     #main-content {
@@ -164,11 +172,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: white;
-      border-radius: 10px;
-      padding: 20px;
+      background: var(--surface-secondary, #111b2d);
+      border-radius: 18px;
+      padding: 24px;
       position: relative;
       overflow: hidden;
+      border: 1px solid var(--surface-border, rgba(148, 163, 184, 0.25));
     }
     #image-container {
       display: none;
@@ -180,19 +189,19 @@
     #drop-area {
       width: 100%;
       height: 300px;
-      border: 2px dashed #ccc;
-      border-radius: 8px;
+      border: 2px dashed rgba(92, 204, 244, 0.35);
+      border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #666;
+      color: rgba(255, 255, 255, 0.65);
       margin-bottom: 20px;
       transition: all 0.3s;
       cursor: pointer;
     }
     #drop-area.dragover {
-      border-color: #00a99d;
-      color: #00a99d;
+      border-color: var(--color-accent, #5cccf4);
+      color: var(--color-accent, #5cccf4);
     }
     /* Ensure the image container uses a canvas */
     #image-container {
@@ -232,12 +241,14 @@
       align-items: center;
     }
     .modal-content {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
+      background: var(--surface-secondary, #111b2d);
+      padding: 24px;
+      border-radius: 16px;
       width: 90%;
       max-width: 500px;
       text-align: center;
+      border: 1px solid var(--surface-border, rgba(148, 163, 184, 0.25));
+      color: rgba(255, 255, 255, 0.92);
     }
     .modal-content img {
       max-width: 100%;
@@ -245,7 +256,7 @@
       margin-bottom: 10px;
     }
     .close {
-      color: #aaa;
+      color: rgba(255, 255, 255, 0.6);
       float: right;
       font-size: 28px;
       font-weight: bold;
@@ -253,21 +264,25 @@
     }
     .close:hover,
     .close:focus {
-      color: black;
+      color: rgba(255, 255, 255, 0.95);
       text-decoration: none;
     }
     .download-button {
       padding: 10px 20px;
-      background-color: #00a99d;
-      color: white;
+      background: linear-gradient(135deg, var(--color-accent, #5cccf4), #2d9ac0);
+      color: #0d1424;
       border: none;
       cursor: pointer;
       font-size: 1rem;
       margin-top: 10px;
-      border-radius: 5px;
+      border-radius: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      box-shadow: 0 18px 32px rgba(92, 204, 244, 0.35);
     }
     .download-button:hover {
-      background-color: #45a049;
+      transform: translateY(-2px);
+      box-shadow: 0 24px 40px rgba(92, 204, 244, 0.45);
     }
     /* New styles for additional controls */
     .slider-group {
@@ -291,10 +306,11 @@
       width: 100%;
       padding: 10px;
       margin-top: 5px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      background-color: #fff;
+      border: 1px solid var(--surface-border, rgba(148, 163, 184, 0.25));
+      border-radius: 10px;
+      background: var(--surface-soft, rgba(27, 39, 60, 0.65));
       font-size: 1rem;
+      color: rgba(255, 255, 255, 0.92);
     }
     .control-buttons {
       display: flex;
@@ -305,11 +321,12 @@
     }
     /* Advanced Settings Styling */
     .advanced-settings {
-      background-color: #f9f9f9;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 15px;
-      margin-bottom: 15px;
+      background: rgba(17, 27, 45, 0.85);
+      border: 1px solid var(--surface-border, rgba(148, 163, 184, 0.25));
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 0.85);
     }
     .advanced-settings summary {
       font-size: 1.2rem;
@@ -318,6 +335,7 @@
       outline: none;
       list-style: none;
       margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.9);
     }
     .advanced-settings[open] {
       padding-bottom: 10px;

@@ -44,7 +44,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: radial-gradient(circle at top, rgba(70, 97, 164, 0.55), rgba(8, 12, 24, 0.95));
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -53,48 +53,48 @@
         }
 
         .container {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
+            background: rgba(17, 27, 45, 0.9);
+            backdrop-filter: blur(16px);
+            border-radius: 24px;
             padding: 40px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 35px 70px rgba(0, 0, 0, 0.45);
             max-width: 600px;
             width: 100%;
             text-align: center;
         }
 
         h1 {
-            color: #333;
+            color: rgba(255, 255, 255, 0.95);
             margin-bottom: 10px;
             font-size: 2.5rem;
             font-weight: 700;
         }
 
         .subtitle {
-            color: #666;
+            color: rgba(255, 255, 255, 0.7);
             margin-bottom: 40px;
             font-size: 1.1rem;
         }
 
         .upload-area {
-            border: 3px dashed #667eea;
+            border: 3px dashed rgba(92, 204, 244, 0.5);
             border-radius: 15px;
             padding: 60px 20px;
             margin-bottom: 30px;
             transition: all 0.3s ease;
             cursor: pointer;
-            background: rgba(102, 126, 234, 0.05);
+            background: rgba(92, 204, 244, 0.08);
         }
 
         .upload-area:hover {
-            border-color: #764ba2;
-            background: rgba(118, 75, 162, 0.1);
+            border-color: rgba(92, 204, 244, 0.6);
+            background: rgba(45, 154, 192, 0.16);
             transform: translateY(-2px);
         }
 
         .upload-area.dragover {
-            border-color: #4CAF50;
-            background: rgba(76, 175, 80, 0.1);
+            border-color: #22c55e;
+            background: rgba(34, 197, 94, 0.18);
         }
 
         .upload-icon {
@@ -105,13 +105,13 @@
 
         .upload-text {
             font-size: 1.3rem;
-            color: #333;
+            color: rgba(255, 255, 255, 0.85);
             margin-bottom: 10px;
             font-weight: 600;
         }
 
         .upload-subtext {
-            color: #666;
+            color: rgba(255, 255, 255, 0.7);
             font-size: 1rem;
         }
 
@@ -128,7 +128,7 @@
             display: block;
             margin-bottom: 10px;
             font-weight: 600;
-            color: #333;
+            color: rgba(255, 255, 255, 0.85);
         }
 
         .quality-options {
@@ -143,21 +143,22 @@
             align-items: center;
             gap: 5px;
             padding: 10px 15px;
-            background: #f8f9fa;
+            background: rgba(20, 32, 52, 0.85);
             border-radius: 25px;
             cursor: pointer;
             transition: all 0.3s ease;
-            border: 2px solid transparent;
+            border: 2px solid rgba(92, 204, 244, 0.2);
         }
 
         .quality-option:hover {
-            background: #e9ecef;
+            background: rgba(92, 204, 244, 0.18);
+            border-color: rgba(92, 204, 244, 0.4);
         }
 
         .quality-option input[type="radio"]:checked + label {
-            background: #667eea;
-            color: white;
-            border-color: #667eea;
+            background: linear-gradient(135deg, #5cccf4, #2d9ac0);
+            color: rgba(255, 255, 255, 0.92);
+            border-color: rgba(92, 204, 244, 0.5);
         }
 
         .quality-option input[type="radio"] {
@@ -165,8 +166,8 @@
         }
 
         .convert-btn {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
+            background: linear-gradient(135deg, #5cccf4, #2d9ac0);
+            color: rgba(255, 255, 255, 0.92);
             border: none;
             padding: 15px 40px;
             border-radius: 50px;
@@ -186,7 +187,7 @@
 
         .convert-btn:enabled:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 24px 40px rgba(92, 204, 244, 0.45);
         }
 
         .progress-container {
@@ -197,14 +198,14 @@
         .progress-bar {
             width: 100%;
             height: 8px;
-            background: #e9ecef;
+            background: rgba(255, 255, 255, 0.12);
             border-radius: 10px;
             overflow: hidden;
         }
 
         .progress-fill {
             height: 100%;
-            background: linear-gradient(90deg, #667eea, #764ba2);
+            background: linear-gradient(90deg, #5cccf4, #2d9ac0);
             width: 0%;
             transition: width 0.3s ease;
         }
@@ -222,9 +223,10 @@
         }
 
         .image-preview {
-            border-radius: 10px;
+            border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(148, 163, 184, 0.2);
         }
 
         .image-preview img {
@@ -235,32 +237,33 @@
 
         .image-label {
             padding: 10px;
-            background: #f8f9fa;
+            background: rgba(20, 32, 52, 0.85);
             font-weight: 600;
-            color: #333;
+            color: rgba(255, 255, 255, 0.85);
         }
 
         .download-btn {
-            background: #28a745;
-            color: white;
+            background: linear-gradient(135deg, #34d399, #0ea5e9);
+            color: #0d1424;
             border: none;
             padding: 12px 30px;
-            border-radius: 25px;
+            border-radius: 28px;
             font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
+            box-shadow: 0 18px 32px rgba(52, 211, 153, 0.35);
         }
 
         .download-btn:hover {
-            background: #218838;
-            transform: translateY(-1px);
+            transform: translateY(-2px);
+            box-shadow: 0 26px 44px rgba(52, 211, 153, 0.45);
         }
 
         .file-info {
-            background: #f8f9fa;
+            background: rgba(20, 32, 52, 0.85);
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
@@ -272,7 +275,7 @@
             justify-content: space-between;
             margin-bottom: 10px;
             padding-bottom: 10px;
-            border-bottom: 1px solid #dee2e6;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.25);
         }
 
         .info-row:last-child {
@@ -281,10 +284,10 @@
         }
 
         .error-message {
-            color: #dc3545;
-            background: #f8d7da;
-            border: 1px solid #f5c6cb;
-            border-radius: 10px;
+            color: #fca5a5;
+            background: rgba(248, 113, 113, 0.25);
+            border: 1px solid rgba(252, 165, 165, 0.45);
+            border-radius: 16px;
             padding: 15px;
             margin-top: 20px;
             display: none;
