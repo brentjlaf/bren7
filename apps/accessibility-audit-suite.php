@@ -1006,14 +1006,21 @@ if (!empty($scanResults)) {
             --audit-text-muted: rgba(226, 232, 240, 0.78);
             --audit-text-subtle: rgba(148, 163, 184, 0.7);
             --audit-highlight: rgba(92, 204, 244, 0.16);
-            --audit-success: rgba(16, 185, 129, 0.22);
-            --audit-success-text: #34d399;
-            --audit-info: rgba(59, 130, 246, 0.2);
-            --audit-info-text: #60a5fa;
-            --audit-warning: rgba(251, 191, 36, 0.22);
-            --audit-warning-text: #fbbf24;
-            --audit-error: rgba(248, 113, 113, 0.22);
-            --audit-error-text: #fca5a5;
+            --audit-success: #0f766e;
+            --audit-success-text: #ecfdf5;
+            --audit-info: #1d4ed8;
+            --audit-info-text: #e0f2fe;
+            --audit-warning: #92400e;
+            --audit-warning-text: #fef3c7;
+            --audit-error: #7f1d1d;
+            --audit-error-text: #fee2e2;
+            --audit-moderate: #78350f;
+            --audit-moderate-text: #fde68a;
+            --audit-minor: #312e81;
+            --audit-minor-text: #ede9fe;
+            --stat-total-color: #38bdf8;
+            --stat-serious-color: #fb923c;
+            --heading-accent: #60a5fa;
         }
 
         body {
@@ -1043,7 +1050,7 @@ if (!empty($scanResults)) {
         h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
-            color: #667eea;
+            color: var(--heading-accent);
         }
         
         .subtitle {
@@ -1201,11 +1208,13 @@ if (!empty($scanResults)) {
             font-weight: 700;
             margin-bottom: 0.5rem;
         }
-        
-        .stat-value.score-excellent { color: #10b981; }
-        .stat-value.score-good { color: #3b82f6; }
-        .stat-value.score-fair { color: #f59e0b; }
-        .stat-value.score-poor { color: #ef4444; }
+
+        .stat-value.score-excellent { color: var(--audit-success-text); }
+        .stat-value.score-good { color: var(--audit-info-text); }
+        .stat-value.score-fair { color: var(--audit-warning-text); }
+        .stat-value.score-poor { color: var(--audit-error-text); }
+        .stat-value.stat-total { color: var(--stat-total-color); }
+        .stat-value.stat-serious { color: var(--stat-serious-color); }
         
         .stat-label {
             color: var(--audit-text-subtle);
@@ -1317,7 +1326,7 @@ if (!empty($scanResults)) {
         
         .badge-aaa { background: var(--audit-success); color: var(--audit-success-text); }
         .badge-aa { background: var(--audit-info); color: var(--audit-info-text); }
-        .badge-a { background: rgba(129, 140, 248, 0.22); color: #c7d2fe; }
+        .badge-a { background: var(--audit-minor); color: var(--audit-minor-text); }
         .badge-partial { background: var(--audit-warning); color: var(--audit-warning-text); }
         .badge-failing { background: var(--audit-error); color: var(--audit-error-text); }
         
@@ -1331,10 +1340,10 @@ if (!empty($scanResults)) {
             border: 1px solid transparent;
         }
 
-        .issue-critical { background: var(--audit-error); color: var(--audit-error-text); border-color: rgba(248, 113, 113, 0.4); }
-        .issue-serious { background: var(--audit-warning); color: var(--audit-warning-text); border-color: rgba(251, 191, 36, 0.35); }
-        .issue-moderate { background: rgba(253, 224, 71, 0.16); color: #facc15; border-color: rgba(250, 204, 21, 0.3); }
-        .issue-minor { background: rgba(129, 140, 248, 0.2); color: #c7d2fe; border-color: rgba(129, 140, 248, 0.35); }
+        .issue-critical { background: var(--audit-error); color: var(--audit-error-text); border-color: #fecaca; }
+        .issue-serious { background: var(--audit-warning); color: var(--audit-warning-text); border-color: #fcd34d; }
+        .issue-moderate { background: var(--audit-moderate); color: var(--audit-moderate-text); border-color: #fbbf24; }
+        .issue-minor { background: var(--audit-minor); color: var(--audit-minor-text); border-color: #a5b4fc; }
 
         .issues-list {
             font-size: 0.875rem;
@@ -1358,8 +1367,8 @@ if (!empty($scanResults)) {
             padding: 1.5rem;
             border-radius: 0.75rem;
             margin-bottom: 2rem;
-            border-left: 4px solid rgba(248, 113, 113, 0.6);
-            border: 1px solid rgba(248, 113, 113, 0.35);
+            border-left: 4px solid #fca5a5;
+            border: 1px solid #fca5a5;
         }
 
         .info {
@@ -1418,7 +1427,7 @@ if (!empty($scanResults)) {
         }
         
         .no-issues {
-            color: #10b981;
+            color: #34d399;
             font-weight: 600;
         }
         
@@ -1540,7 +1549,7 @@ if (!empty($scanResults)) {
         <?php if (!empty($scanResults)): ?>
             <div class="stats">
                 <div class="stat-card">
-                    <div class="stat-value" style="color: #667eea;"><?php echo $stats['total']; ?></div>
+                    <div class="stat-value stat-total"><?php echo $stats['total']; ?></div>
                     <div class="stat-label">Pages Scanned</div>
                 </div>
                 <div class="stat-card">
@@ -1561,7 +1570,7 @@ if (!empty($scanResults)) {
                     <div class="stat-label">Critical Issues</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value" style="color: #ea580c;"><?php echo $stats['serious_issues']; ?></div>
+                    <div class="stat-value stat-serious"><?php echo $stats['serious_issues']; ?></div>
                     <div class="stat-label">Serious Issues</div>
                 </div>
                 <div class="stat-card">
