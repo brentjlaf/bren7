@@ -345,7 +345,7 @@ function formatBytes($size, $precision = 2) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Performance Auditor – Sitemap Speed Scores</title>
+    <title>BREN7 Performance Auditor – Sitemap Speed Scores</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Capture Lighthouse performance metrics and core vitals for each sitemap URL with the streamlined MW Performance Auditor from BREN7.">
   <meta name="keywords" content="lighthouse performance auditor, sitemap speed analysis, web vitals checker, performance dashboard, BREN7 tools">
@@ -353,7 +353,7 @@ function formatBytes($size, $precision = 2) {
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="MW Performance Auditor – Sitemap Speed Scores">
+  <meta property="og:title" content="BREN7 Performance Auditor – Sitemap Speed Scores">
   <meta property="og:description" content="Compare page speed metrics across sitemap URLs with the MW Performance Auditor by BREN7.">
   <meta property="og:url" content="https://bren7.com/apps/sitemap-performance-audit.php">
   <meta property="og:type" content="website">
@@ -361,7 +361,7 @@ function formatBytes($size, $precision = 2) {
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="MW Performance Auditor – Sitemap Speed Scores">
+  <meta name="twitter:title" content="BREN7 Performance Auditor – Sitemap Speed Scores">
   <meta name="twitter:description" content="Review Lighthouse performance scores across your sitemap with this BREN7 tool.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
@@ -838,7 +838,7 @@ tbody tr:nth-child(even) {
 
     <div class="container">
         <div class="header">
-            <h1><i class="fas fa-tachometer-alt"></i> MW Performance Auditor</h1>
+            <h1><i class="fas fa-tachometer-alt"></i> BREN7 Performance Auditor</h1>
             <p class="subtitle">Analyze page speed, Core Web Vitals, and optimization opportunities across your sitemap</p>
         </div>
 

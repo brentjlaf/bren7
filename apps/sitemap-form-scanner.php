@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Form Scanner – Form Inventory & Action Audit</title>
+    <title>BREN7 Form Scanner – Form Inventory & Action Audit</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Scan sitemap URLs to catalog forms, capture endpoints, and verify submission methods with the BREN7 MW Form Scanner.">
   <meta name="keywords" content="form scanner, form inventory tool, submission endpoint audit, sitemap form analysis, BREN7 form checker">
@@ -115,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="MW Form Scanner – Form Inventory & Action Audit">
+  <meta property="og:title" content="BREN7 Form Scanner – Form Inventory & Action Audit">
   <meta property="og:description" content="Discover forms, actions, and submission types across your sitemap with the MW Form Scanner from BREN7.">
   <meta property="og:url" content="https://bren7.com/apps/sitemap-form-scanner.php">
   <meta property="og:type" content="website">
@@ -123,7 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="MW Form Scanner – Form Inventory & Action Audit">
+  <meta name="twitter:title" content="BREN7 Form Scanner – Form Inventory & Action Audit">
   <meta name="twitter:description" content="Catalog forms and submission endpoints across pages with BREN7's MW Form Scanner.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
@@ -511,7 +511,7 @@ tbody tr:nth-child(even) {
 
     <div class="container">
         <div class="header">
-            <h1><i class="fas fa-code"></i> MW Form Scanner</h1>
+            <h1><i class="fas fa-code"></i> BREN7 Form Scanner</h1>
             <p class="subtitle">Identify non-search &lt;form&gt; tags across your site</p>
         </div>
 

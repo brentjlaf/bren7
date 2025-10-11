@@ -292,7 +292,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Image Scanner – Lazy Loading Audit</title>
+    <title>BREN7 Image Scanner – Lazy Loading Audit</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Evaluate sitemap images, detect duplicates, and verify lazy loading attributes with the BREN7 MW Image Scanner (Lazy Load Edition).">
   <meta name="keywords" content="image lazy loading audit, sitemap media scanner, lazyload checker, image performance review, BREN7 image tool">
@@ -300,7 +300,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="MW Image Scanner – Lazy Loading Audit">
+  <meta property="og:title" content="BREN7 Image Scanner – Lazy Loading Audit">
   <meta property="og:description" content="Scan sitemap images to track lazy loading adoption and media coverage with the BREN7 MW Image Scanner.">
   <meta property="og:url" content="https://bren7.com/apps/sitemap-image-scanner-lazyload.php">
   <meta property="og:type" content="website">
@@ -308,7 +308,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="MW Image Scanner – Lazy Loading Audit">
+  <meta name="twitter:title" content="BREN7 Image Scanner – Lazy Loading Audit">
   <meta name="twitter:description" content="Check lazy loading usage across sitemap images with BREN7's MW Image Scanner.">
   <meta name="twitter:image" content="https://bren7.com/images/favicon.jpg">
 
@@ -792,7 +792,7 @@ tbody tr:nth-child(even) {
 
     <div class="container">
         <div class="header">
-            <h1><i class="fas fa-images"></i> MW Image Scanner</h1>
+            <h1><i class="fas fa-images"></i> BREN7 Image Scanner</h1>
             <p class="subtitle">Discover all images used across your BREN7 site (including lazy loaded images)</p>
         </div>
 
