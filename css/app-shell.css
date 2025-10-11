@@ -1,0 +1,177 @@
+.app-shell-body {
+  font-family: var(--font-primary, 'Oswald', sans-serif) !important;
+  background: var(--color-bg, #000000) !important;
+  color: var(--color-light-text, #ffffff) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.app-shell-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-shell-header {
+  padding-top: 80px;
+}
+
+.app-shell-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 100px;
+}
+
+.app-shell-content {
+  background: rgba(8, 15, 31, 0.88);
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.1));
+  border-radius: 26px;
+  padding: 48px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+}
+
+.app-shell-content > *:first-child {
+  margin-top: 0 !important;
+}
+
+.app-shell-content > * + * {
+  margin-top: 1.5rem;
+}
+
+.app-shell-content > .header,
+.app-shell-content > header {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin-bottom: 2.5rem !important;
+  text-align: center;
+  box-shadow: none !important;
+}
+
+.app-shell-content > .header h1,
+.app-shell-content > header h1 {
+  font-family: var(--font-primary, 'Oswald', sans-serif) !important;
+  font-size: 2.5rem !important;
+  letter-spacing: 0.6rem !important;
+  text-transform: uppercase !important;
+  color: var(--color-light-text, #ffffff) !important;
+  margin-bottom: 1rem !important;
+}
+
+.app-shell-content > .header p,
+.app-shell-content > header p {
+  font-family: var(--font-secondary, 'Raleway', sans-serif) !important;
+  color: var(--color-gray, rgba(255, 255, 255, 0.65)) !important;
+  margin: 0 auto !important;
+  max-width: 720px;
+  line-height: 1.7;
+}
+
+.app-shell-content h1,
+.app-shell-content h2,
+.app-shell-content h3,
+.app-shell-content h4,
+.app-shell-content h5,
+.app-shell-content h6 {
+  font-family: var(--font-primary, 'Oswald', sans-serif);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.app-shell-content p,
+.app-shell-content li,
+.app-shell-content label,
+.app-shell-content span,
+.app-shell-content input,
+.app-shell-content textarea,
+.app-shell-content select,
+.app-shell-content button,
+.app-shell-content th,
+.app-shell-content td {
+  font-family: var(--font-secondary, 'Raleway', sans-serif) !important;
+  color: var(--color-light-text, #ffffff);
+}
+
+.app-shell-content a {
+  color: var(--color-accent, #5cccf4);
+}
+
+.app-shell-content a:hover,
+.app-shell-content a:focus {
+  color: var(--color-accent-hover, #33b0da);
+}
+
+.app-shell-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.app-shell-content table th,
+.app-shell-content table td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.75rem;
+}
+
+.app-shell-content button,
+.app-shell-content .btn,
+.app-shell-content input[type="submit"],
+.app-shell-content input[type="button"],
+.app-shell-content input[type="reset"] {
+  font-family: var(--font-primary, 'Oswald', sans-serif) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.app-shell-content input,
+.app-shell-content textarea,
+.app-shell-content select {
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--color-light-text, #ffffff);
+}
+
+.app-shell-footer {
+  border-top: 1px solid var(--color-border, rgba(255, 255, 255, 0.1));
+  padding: 40px 20px;
+}
+
+@media (max-width: 992px) {
+  .app-shell-main {
+    padding: 40px 20px 80px;
+  }
+
+  .app-shell-content {
+    padding: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-shell-header {
+    padding-top: 60px;
+  }
+
+  .app-shell-content {
+    padding: 28px;
+  }
+
+  .app-shell-content > * + * {
+    margin-top: 1.25rem;
+  }
+
+  .app-shell-content > .header h1,
+  .app-shell-content > header h1 {
+    font-size: 2.1rem !important;
+    letter-spacing: 0.4rem !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .app-shell-content {
+    padding: 22px;
+  }
+}

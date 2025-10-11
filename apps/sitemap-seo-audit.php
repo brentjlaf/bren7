@@ -753,6 +753,7 @@ if (!empty($_GET['export']) && $_GET['export'] == '1' && !empty($all_results)) {
   </div>
   <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 
+  <script src="/js/app-shell.js" defer></script>
 </body>
 
 </html>
