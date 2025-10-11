@@ -85,12 +85,6 @@ $projects = [
         'categories' => ['Accessibility']
     ],
     [
-        'title' => 'Accessible Form Builder',
-        'path' => 'accessible-form-builder.php',
-        'description' => 'Assemble compliant forms with labeled controls, helper text, and keyboard-friendly layouts.',
-        'categories' => ['Accessibility', 'Productivity']
-    ],
-    [
         'title' => 'Advanced CSV Filter',
         'path' => 'advanced-csv-filter.php',
         'description' => 'Upload CSV files and slice data instantly with multi-condition filters and exports.',
