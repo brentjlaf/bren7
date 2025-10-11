@@ -109,12 +109,6 @@ $projects = [
         'categories' => ['Experiments', 'Design']
     ],
     [
-        'title' => 'Card Builder Pro',
-        'path' => 'card-builder-pro.php',
-        'description' => 'Design shareable profile and product cards with editable layouts, imagery, and copy.',
-        'categories' => ['Design', 'Productivity']
-    ],
-    [
         'title' => 'Color Palette Generator',
         'path' => 'color-palette-generator.php',
         'description' => 'Craft cohesive color palettes with harmonious suggestions and quick export options.',
